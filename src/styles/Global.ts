@@ -8,6 +8,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${(props) => props.theme['--color-base/gray-1']};
+        background-color: ${(props) => props.theme['--gray-100']};
+        color: ${(props) => props.theme['--gray-800']};
+        -webkit-font-smoothing: antialiased;
     }
+
+    /* Adicione a fonte padrão e desabilite aqui */
+    /* body, input, textarea, button { 
+        font: 400 1rem Roboto, 'sans-serif';
+    }  */
 `
