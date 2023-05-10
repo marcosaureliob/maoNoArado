@@ -1,4 +1,5 @@
 
+
 import { Inter } from 'next/font/google'
 import StyledComponentsRegistry from '../lib/registry'
 const inter = Inter({ subsets: ['latin'] })
