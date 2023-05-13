@@ -1,12 +1,10 @@
-import { Header } from "@/components/Patterns/Header"
+import { Header } from '@/components/Patterns/Header'
 
 export default function Home() {
   return (
-   <div>
-    <Header/>
-    <h1>Testando</h1>
-   
-   </div>
-   
+    <div>
+      <Header />
+      <h1>Testando</h1>
+    </div>
   )
 }
