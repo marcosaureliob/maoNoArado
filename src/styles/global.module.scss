@@ -1,0 +1,14 @@
+@import "./mixinsThemes";
+
+.html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    body {
+        background-color: $background;
+        color: $gray-900;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
