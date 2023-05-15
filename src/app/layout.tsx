@@ -1,6 +1,6 @@
 // import { Inter } from 'next/font/google'
 import { Roboto } from 'next/font/google'
-import StyledComponentsRegistry from '../lib/registry'
+// import StyledComponentsRegistry from '../lib/registry'
 
 // const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -21,10 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={roboto.className}>
-        {/* <body className={inter.className}> */}
-        <StyledComponentsRegistry> {children}</StyledComponentsRegistry>
-      </body>
+      <body className={roboto.className}>{children}</body>
     </html>
   )
 }
