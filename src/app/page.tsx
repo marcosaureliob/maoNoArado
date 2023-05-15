@@ -1,5 +1,5 @@
 import { Header } from '@/components/Patterns/Header'
-import { Home } from './pages/Home'
+import Home from './home/page'
 
 export default function App() {
   return (
