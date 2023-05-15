@@ -9,8 +9,7 @@
     "lint": "next lint"
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^1.2.0",
-    "@types/styled-components": "^5.1.26"
+    "@rocketseat/eslint-config": "^1.2.0"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
