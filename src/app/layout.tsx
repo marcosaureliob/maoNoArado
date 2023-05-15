@@ -2,8 +2,6 @@
 import { Roboto } from 'next/font/google'
 import StyledComponentsRegistry from '../lib/registry'
 
-import global from '../styles/global.module.scss'
-
 // const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
   weight: '400',
@@ -22,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className={global.html}>
+    <html lang="pt-br">
       <body className={roboto.className}>
         {/* <body className={inter.className}> */}
         <StyledComponentsRegistry> {children}</StyledComponentsRegistry>
