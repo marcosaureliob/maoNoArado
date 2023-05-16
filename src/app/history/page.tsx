@@ -1,7 +1,11 @@
-export default function History() {
+'use client'
+
+import { HistoryContainer } from '@/styles/page/history'
+
+export default function Hand() {
   return (
-    <>
-      <h2>Histórico</h2>
-    </>
+    <HistoryContainer>
+      <p>História Mão do Arado</p>
+    </HistoryContainer>
   )
 }

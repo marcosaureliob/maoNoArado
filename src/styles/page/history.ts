@@ -1,6 +1,8 @@
+'use client'
+
 import { styled } from '..'
 
-export const HeaderContainer = styled('header', {
+export const HistoryContainer = styled('div', {
   width: '100%',
   maxWidth: '1216px',
 

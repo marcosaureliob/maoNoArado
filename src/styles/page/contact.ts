@@ -1,6 +1,6 @@
 import { styled } from '..'
 
-export const HeaderContainer = styled('header', {
+export const ContactContainer = styled('div', {
   width: '100%',
   maxWidth: '1216px',
 
