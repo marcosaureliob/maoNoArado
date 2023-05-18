@@ -13,6 +13,7 @@ import {
   BoxTags,
   Tag,
   ProjectContainer,
+  BenefitBox,
 } from '@/styles/page/project'
 
 export default function Projects() {
@@ -64,7 +65,19 @@ export default function Projects() {
         />
       </BackgroundSection>
 
-      <section>
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectTop}
+          alt=""
+          fill={true}
+          style={{
+            objectFit: 'cover',
+            transform: 'scaleX(-1)',
+          }}
+        />
+      </BackgroundSection>
+
+      <BenefitBox>
         <h2>Benefícios e Saúde</h2>
 
         <BoxTags>
@@ -84,7 +97,19 @@ export default function Projects() {
           <Tag>curso manicure pedicure</Tag>
           <Tag>e muito mais</Tag>
         </BoxTags>
-      </section>
+      </BenefitBox>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectBottom}
+          alt=""
+          fill={true}
+          style={{
+            objectFit: 'cover',
+            transform: 'scaleX(-1)',
+          }}
+        />
+      </BackgroundSection>
     </ProjectContainer>
   )
 }

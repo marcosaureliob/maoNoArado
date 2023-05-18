@@ -43,16 +43,6 @@ export const ProjectBox = styled('section', {
 
   div: {
     width: '44.125rem',
-
-    // span: {
-    //   fontSize: '1.125rem',
-    //   borderRadius: '50px',
-    //   fontWeight: '700',
-    //   border: '0.8px solid green',
-    //   padding: '1rem 2rem',
-    //   textTransform: 'uppercase',
-    //   letterSpacing: '0.06em',
-    // },
   },
 })
 
@@ -71,4 +61,18 @@ export const Tag = styled('span', {
   padding: '1rem 2rem',
   textTransform: 'uppercase',
   letterSpacing: '0.06em',
+})
+
+export const BenefitBox = styled('section', {
+  maxWidth: '64.5rem',
+
+  display: 'flex',
+  alignItems: 'center',
+  flexDirection: 'column',
+  gap: '6.25rem',
+
+  h2: {
+    fontSize: '2rem',
+    letterSpacing: '0.04em',
+  },
 })
