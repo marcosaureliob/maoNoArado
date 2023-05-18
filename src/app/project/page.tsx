@@ -2,15 +2,20 @@
 
 import Image from 'next/image'
 
-import { ProjectContainer } from '@/styles/page/project'
 import Person from '@/asstes/person.svg'
+import { ImageBox, ProjectContainer } from '@/styles/page/project'
 
 export default function Projects() {
   return (
     <ProjectContainer>
-      <section>
-        <Image src={Person} alt="é" />
-      </section>
+      <ImageBox>
+        <Image
+          src={Person}
+          alt="é"
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </ImageBox>
 
       <section>
         <h2>Projetos</h2>
@@ -34,21 +39,23 @@ export default function Projects() {
       <section>
         <h2>Benefícios e Saúde</h2>
 
-        <span>psicóloga</span>
-        <span>psicanalise</span>
-        <span>Sócio emocional</span>
-        <span>corte e costura</span>
-        <span>projeto conectados</span>
-        <span>padaria artesanal</span>
-        <span>assistente social</span>
-        <span>informática básica</span>
-        <span>cabelereiro</span>
-        <span>palestras sobre empreendorismo</span>
-        <span>capacitação profissional</span>
-        <span>conecta trampo</span>
-        <span>Workshop do emprego</span>
-        <span>curso manicure pedicure</span>
-        <span>e muito mais</span>
+        <div>
+          <span>psicóloga</span>
+          <span>psicanalise</span>
+          <span>Sócio emocional</span>
+          <span>corte e costura</span>
+          <span>projeto conectados</span>
+          <span>padaria artesanal</span>
+          <span>assistente social</span>
+          <span>informática básica</span>
+          <span>cabelereiro</span>
+          <span>palestras sobre empreendorismo</span>
+          <span>capacitação profissional</span>
+          <span>conecta trampo</span>
+          <span>Workshop do emprego</span>
+          <span>curso manicure pedicure</span>
+          <span>e muito mais</span>
+        </div>
       </section>
     </ProjectContainer>
   )
