@@ -89,8 +89,8 @@ export default function Projects() {
           <Tag color="turquoise">padaria artesanal</Tag>
           <Tag color="orange">assistente social</Tag>
           <Tag color="turquoise">informática básica</Tag>
-          <Tag color="orange">cabelereiro</Tag>
-          <Tag color="turquoise">palestras sobre empreendorismo</Tag>
+          <Tag color="orange">cabeleireiro</Tag>
+          <Tag color="turquoise">palestras sobre empreendedorismo</Tag>
           <Tag color="orange">capacitação profissional</Tag>
           <Tag color="turquoise">conecta trampo</Tag>
           <Tag color="orange">Workshop do emprego</Tag>
