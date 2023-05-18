@@ -2,8 +2,16 @@
 
 import Image from 'next/image'
 
-import Person from '@/asstes/person.svg'
-import { ImageBox, ProjectContainer } from '@/styles/page/project'
+import Person from '@/assets/person.svg'
+import BackgroundProjectTop from '@/assets/background-project-top.svg'
+import BackgroundProjectBottom from '@/assets/background-project-bottom.svg'
+
+import {
+  ImageBox,
+  BackgroundSection,
+  ProjectBox,
+  ProjectContainer,
+} from '@/styles/page/project'
 
 export default function Projects() {
   return (
@@ -17,7 +25,16 @@ export default function Projects() {
         />
       </ImageBox>
 
-      <section>
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectTop}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </BackgroundSection>
+
+      <ProjectBox>
         <h2>Projetos</h2>
 
         <div>
@@ -34,7 +51,16 @@ export default function Projects() {
           <span>grupo da terceira idade</span>
           <span>reforço escolar</span>
         </div>
-      </section>
+      </ProjectBox>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectBottom}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </BackgroundSection>
 
       <section>
         <h2>Benefícios e Saúde</h2>
