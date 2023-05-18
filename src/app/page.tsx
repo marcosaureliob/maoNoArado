@@ -1,12 +1,9 @@
 'use client'
 
-import { globalStyles } from '@/styles/global'
 import { Header } from '@/components/Patterns/Header'
 import { HomeContainer } from '@/styles/page/home'
 
 import Link from 'next/link'
-
-globalStyles()
 
 export default function Home() {
   return (
