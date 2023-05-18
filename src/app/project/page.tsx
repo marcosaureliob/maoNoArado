@@ -41,18 +41,18 @@ export default function Projects() {
         <h2>Projetos</h2>
 
         <BoxTags>
-          <Tag>cultural copeira</Tag>
-          <Tag>teatro</Tag>
-          <Tag>alfabetização</Tag>
-          <Tag>dança</Tag>
-          <Tag>maculele</Tag>
-          <Tag>esportes</Tag>
-          <Tag>ballet</Tag>
-          <Tag>educação física</Tag>
-          <Tag>artesanato</Tag>
-          <Tag>saúde em 1° lugar</Tag>
-          <Tag>grupo da terceira idade</Tag>
-          <Tag>reforço escolar</Tag>
+          <Tag color="orange">cultural copeira</Tag>
+          <Tag color="turquoise">teatro</Tag>
+          <Tag color="orange">alfabetização</Tag>
+          <Tag color="turquoise">dança</Tag>
+          <Tag color="orange">maculele</Tag>
+          <Tag color="turquoise">esportes</Tag>
+          <Tag color="orange">ballet</Tag>
+          <Tag color="turquoise">educação física</Tag>
+          <Tag color="orange">artesanato</Tag>
+          <Tag color="turquoise">saúde em 1° lugar</Tag>
+          <Tag color="orange">grupo da terceira idade</Tag>
+          <Tag color="turquoise">reforço escolar</Tag>
         </BoxTags>
       </ProjectBox>
 
@@ -65,7 +65,7 @@ export default function Projects() {
         />
       </BackgroundSection>
 
-      <BackgroundSection>
+      <BackgroundSection marginTop>
         <Image
           src={BackgroundProjectTop}
           alt=""
@@ -81,21 +81,21 @@ export default function Projects() {
         <h2>Benefícios e Saúde</h2>
 
         <BoxTags>
-          <Tag>psicóloga</Tag>
-          <Tag>psicanalise</Tag>
-          <Tag>Sócio emocional</Tag>
-          <Tag>corte e costura</Tag>
-          <Tag>projeto conectados</Tag>
-          <Tag>padaria artesanal</Tag>
-          <Tag>assistente social</Tag>
-          <Tag>informática básica</Tag>
-          <Tag>cabelereiro</Tag>
-          <Tag>palestras sobre empreendorismo</Tag>
-          <Tag>capacitação profissional</Tag>
-          <Tag>conecta trampo</Tag>
-          <Tag>Workshop do emprego</Tag>
-          <Tag>curso manicure pedicure</Tag>
-          <Tag>e muito mais</Tag>
+          <Tag color="orange">psicóloga</Tag>
+          <Tag color="turquoise">psicanalise</Tag>
+          <Tag color="orange">Sócio emocional</Tag>
+          <Tag color="turquoise">corte e costura</Tag>
+          <Tag color="orange">projeto conectados</Tag>
+          <Tag color="turquoise">padaria artesanal</Tag>
+          <Tag color="orange">assistente social</Tag>
+          <Tag color="turquoise">informática básica</Tag>
+          <Tag color="orange">cabelereiro</Tag>
+          <Tag color="turquoise">palestras sobre empreendorismo</Tag>
+          <Tag color="orange">capacitação profissional</Tag>
+          <Tag color="turquoise">conecta trampo</Tag>
+          <Tag color="orange">Workshop do emprego</Tag>
+          <Tag color="turquoise">curso manicure pedicure</Tag>
+          <Tag color="orange">e muito mais</Tag>
         </BoxTags>
       </BenefitBox>
 

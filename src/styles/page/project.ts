@@ -25,6 +25,14 @@ export const ImageBox = styled('section', {
 })
 
 export const BackgroundSection = styled('div', {
+  variants: {
+    marginTop: {
+      true: {
+        marginTop: '10rem',
+      },
+    },
+  },
+
   position: 'relative',
   width: '100%',
   height: '10rem',
@@ -54,10 +62,20 @@ export const BoxTags = styled('div', {
 })
 
 export const Tag = styled('span', {
+  variants: {
+    color: {
+      turquoise: {
+        border: '0.8px solid $turquoise500',
+      },
+      orange: {
+        border: '0.8px solid $orange500',
+      },
+    },
+  },
+
   fontSize: '1.125rem',
   borderRadius: '50px',
   fontWeight: '700',
-  border: '0.8px solid green',
   padding: '1rem 2rem',
   textTransform: 'uppercase',
   letterSpacing: '0.06em',
