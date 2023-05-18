@@ -1,6 +1,8 @@
 import { ReactNode } from 'react'
 
 import { Roboto } from 'next/font/google'
+import { Footer } from '@/components/Patterns/Footer'
+import { Header } from '@/components/Patterns/Header'
 const roboto = Roboto({
   weight: '400',
   style: 'normal',
@@ -15,7 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
