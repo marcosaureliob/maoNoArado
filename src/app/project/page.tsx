@@ -10,6 +10,8 @@ import {
   ImageBox,
   BackgroundSection,
   ProjectBox,
+  BoxTags,
+  Tag,
   ProjectContainer,
 } from '@/styles/page/project'
 
@@ -37,20 +39,20 @@ export default function Projects() {
       <ProjectBox>
         <h2>Projetos</h2>
 
-        <div>
-          <span>cultural copeira</span>
-          <span>teatro</span>
-          <span>alfabetização</span>
-          <span>dança</span>
-          <span>maculele</span>
-          <span>esportes</span>
-          <span>ballet</span>
-          <span>educação física</span>
-          <span>artesanato</span>
-          <span>saúde em 1° lugar</span>
-          <span>grupo da terceira idade</span>
-          <span>reforço escolar</span>
-        </div>
+        <BoxTags>
+          <Tag>cultural copeira</Tag>
+          <Tag>teatro</Tag>
+          <Tag>alfabetização</Tag>
+          <Tag>dança</Tag>
+          <Tag>maculele</Tag>
+          <Tag>esportes</Tag>
+          <Tag>ballet</Tag>
+          <Tag>educação física</Tag>
+          <Tag>artesanato</Tag>
+          <Tag>saúde em 1° lugar</Tag>
+          <Tag>grupo da terceira idade</Tag>
+          <Tag>reforço escolar</Tag>
+        </BoxTags>
       </ProjectBox>
 
       <BackgroundSection>
@@ -65,23 +67,23 @@ export default function Projects() {
       <section>
         <h2>Benefícios e Saúde</h2>
 
-        <div>
-          <span>psicóloga</span>
-          <span>psicanalise</span>
-          <span>Sócio emocional</span>
-          <span>corte e costura</span>
-          <span>projeto conectados</span>
-          <span>padaria artesanal</span>
-          <span>assistente social</span>
-          <span>informática básica</span>
-          <span>cabelereiro</span>
-          <span>palestras sobre empreendorismo</span>
-          <span>capacitação profissional</span>
-          <span>conecta trampo</span>
-          <span>Workshop do emprego</span>
-          <span>curso manicure pedicure</span>
-          <span>e muito mais</span>
-        </div>
+        <BoxTags>
+          <Tag>psicóloga</Tag>
+          <Tag>psicanalise</Tag>
+          <Tag>Sócio emocional</Tag>
+          <Tag>corte e costura</Tag>
+          <Tag>projeto conectados</Tag>
+          <Tag>padaria artesanal</Tag>
+          <Tag>assistente social</Tag>
+          <Tag>informática básica</Tag>
+          <Tag>cabelereiro</Tag>
+          <Tag>palestras sobre empreendorismo</Tag>
+          <Tag>capacitação profissional</Tag>
+          <Tag>conecta trampo</Tag>
+          <Tag>Workshop do emprego</Tag>
+          <Tag>curso manicure pedicure</Tag>
+          <Tag>e muito mais</Tag>
+        </BoxTags>
       </section>
     </ProjectContainer>
   )

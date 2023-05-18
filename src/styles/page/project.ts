@@ -43,19 +43,32 @@ export const ProjectBox = styled('section', {
 
   div: {
     width: '44.125rem',
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: '4rem 1rem',
 
-    span: {
-      fontSize: '1.125rem',
-      borderRadius: '50px',
-      fontWeight: '700',
-      border: '0.8px solid green',
-      padding: '1rem 2rem',
-      textTransform: 'uppercase',
-      letterSpacing: '0.06em',
-    },
+    // span: {
+    //   fontSize: '1.125rem',
+    //   borderRadius: '50px',
+    //   fontWeight: '700',
+    //   border: '0.8px solid green',
+    //   padding: '1rem 2rem',
+    //   textTransform: 'uppercase',
+    //   letterSpacing: '0.06em',
+    // },
   },
+})
+
+export const BoxTags = styled('div', {
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+  gap: '4rem 1rem',
+})
+
+export const Tag = styled('span', {
+  fontSize: '1.125rem',
+  borderRadius: '50px',
+  fontWeight: '700',
+  border: '0.8px solid green',
+  padding: '1rem 2rem',
+  textTransform: 'uppercase',
+  letterSpacing: '0.06em',
 })
