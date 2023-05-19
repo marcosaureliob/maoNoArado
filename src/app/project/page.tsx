@@ -22,7 +22,7 @@ export default function Projects() {
       <ImageBox>
         <Image
           src={Person}
-          alt="é"
+          alt="Pessoas agrupadas, colocando suas mãos unidas uma por cima da outra, simbolizando grupo e união."
           fill={true}
           style={{ objectFit: 'cover' }}
         />
