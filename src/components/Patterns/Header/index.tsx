@@ -2,16 +2,17 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Logo from '@/assets/logos.svg'
 import {
   HeaderContainer,
   HeaderWrapper,
   NavHeaderWrapper,
   LogoWrapper,
   Support,
-  ButtonSupport,
   NavLink,
   NavLinkLogo,
 } from './style'
+import { ButtonSupport } from '@/components/ButtonSupport'
 
 export const Header = () => {
   return (
@@ -19,7 +20,12 @@ export const Header = () => {
       <HeaderWrapper>
         <LogoWrapper>
           <NavLinkLogo href="/">
-            <Image src="/logo.svg" alt="logo" width="103" height="104" />
+            <Image
+              src={Logo}
+              alt="Logo Mão no Arado"
+              width="103"
+              height="104"
+            />
           </NavLinkLogo>
         </LogoWrapper>
         <NavHeaderWrapper>
@@ -29,12 +35,12 @@ export const Header = () => {
           <NavLink href="/project" className="navigationLink">
             Projetos
           </NavLink>
-          <NavLink href="/contact" className="navigationLink">
-            Página de Contato
+          <NavLink href="/gallery" className="navigationLink">
+            Galeria
           </NavLink>
         </NavHeaderWrapper>
         <Support>
-          <ButtonSupport>Apoiar</ButtonSupport>
+          <ButtonSupport />
         </Support>
       </HeaderWrapper>
     </HeaderContainer>
