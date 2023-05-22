@@ -13,9 +13,6 @@ import { ImageContainer } from '@/styles/page/gallery'
 
 const invertImageDatabase = imageDatabase.slice(0).reverse()
 
-console.log(imageDatabase)
-console.log(invertImageDatabase)
-
 export default function ImageGallery() {
   return (
     <LightGallery
