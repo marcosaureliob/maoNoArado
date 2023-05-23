@@ -12,6 +12,7 @@
     "@rocketseat/eslint-config": "^1.2.0"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.9",
     "@stitches/react": "^1.2.8",
     "@types/node": "20.1.1",
     "@types/react": "18.2.6",
@@ -20,6 +21,7 @@
     "eslint-config-next": "13.4.1",
     "lightgallery": "^2.7.1",
     "next": "13.4.1",
+    "phosphor-react": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
