@@ -9,8 +9,6 @@ export const ProjectContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
-
-  border: '1px solid blue',
 })
 
 export const ImageBox = styled('section', {
