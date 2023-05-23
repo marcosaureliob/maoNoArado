@@ -23,7 +23,7 @@ export default function Gallery() {
     <GalleryContainer>
       <h2>Fotos da nossa comunidade</h2>
 
-      <span>{imageQuantity} imagens</span>
+      {imageQuantity !== 0 && <span>{imageQuantity} imagens</span>}
 
       <ImageQuantityContext.Provider value={{ getImageQuantity }}>
         <ImageGallery />
