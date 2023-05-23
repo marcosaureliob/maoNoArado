@@ -15,6 +15,19 @@ export const GalleryContainer = styled('section', {
     letterSpacing: '0.04em',
     fontSize: '2rem',
   },
+
+  h3: {
+    fontSize: '1rem',
+    fontWeight: 'normal',
+  },
+
+  span: {
+    backgroundColor: '$orange700',
+    fontSize: '0.875rem',
+    color: '$white',
+    borderRadius: '50px',
+    padding: '6px 12px',
+  },
 })
 
 export const ImageContainer = css({
