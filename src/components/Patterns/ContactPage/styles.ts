@@ -5,6 +5,7 @@ export const ContactPageContainer = styled('main', {
   flexDirection: 'column',
   maxWidth: '800px',
   margin: '0 auto',
+  marginBottom: '9.81rem',
 })
 
 export const ContactPageInfors = styled('section', {
@@ -14,13 +15,13 @@ export const ContactPageInfors = styled('section', {
 export const ContactPageHowToFind = styled('section', {
   display: 'flex',
   flexDirection: 'column',
-  margin: '0 auto',
+  alignItems: 'center',
+  justifyContent: 'center',
 })
 
 export const TitlePageContact = styled('h1', {
   fontSize: '2em',
   fontWeight: '700',
-  lineHeight: '41.6px',
   letterSpacing: '4%',
   color: '#333333',
   marginBottom: '2.5rem',
@@ -80,8 +81,28 @@ export const TextContact = styled('p', {
 export const TitleHowToFind = styled('h2', {
   fontSize: '2rem',
   fontWeight: '700',
-  lineHeight: '41.6px',
+  textAlign: 'center',
   letterSpacing: '4%',
+  marginBottom: '2rem',
 })
 
-export const SectionMap = styled('section', {})
+export const SectionMap = styled('section', {
+  display: 'flex',
+  justifyContent: 'center',
+  width: '100%',
+  flexDirection: 'column',
+})
+
+export const AddressContainer = styled('section', {
+  marginTop: '2rem',
+})
+
+export const Address = styled('address', {
+  display: 'flex',
+  flexDirection: 'column',
+})
+
+export const AddressText = styled('span', {
+  font: 'normal 700 1.12rem Roboto',
+  letterSpacing: '6%',
+})

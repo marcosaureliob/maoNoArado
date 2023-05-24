@@ -15,10 +15,13 @@ import {
   ContainerInformations,
   TitleHowToFind,
   SectionMap,
+  AddressContainer,
+  Address,
+  AddressText,
 } from './styles'
 import { InstagramLogo } from '@/components/InstagramLogo'
 import { FacebookLogo } from '@/components/FacebookLogo'
-import { Map } from '@/components/Map'
+import MapContainer from '@/components/Map'
 
 export const ContactPage = () => {
   return (
@@ -70,7 +73,14 @@ export const ContactPage = () => {
       <ContactPageHowToFind>
         <TitleHowToFind>Onde estamos</TitleHowToFind>
         <SectionMap>
-          <Map />
+          <MapContainer />
+          <AddressContainer>
+            <Address>
+              <AddressText>R. Fraiburgo, 16 - Cidade Líder</AddressText>
+              <AddressText>São Paulo - SP</AddressText>
+              <AddressText>08280-500</AddressText>
+            </Address>
+          </AddressContainer>
         </SectionMap>
       </ContactPageHowToFind>
     </ContactPageContainer>

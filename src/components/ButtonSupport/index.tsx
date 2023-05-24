@@ -6,10 +6,7 @@ export const ButtonSupport = () => {
   return (
     <ButtonSupportWrapper href="contact">
       <TextButton>APOIAR</TextButton>
-      <Image
-        src={HandHeard}
-        alt="Imagem de uma mão com um coração em cima, passando a ideia de apoio"
-      />
+      <Image src={HandHeard} alt="Imagem de uma mão segurando um coração" />
     </ButtonSupportWrapper>
   )
 }

@@ -5,8 +5,7 @@ export const HeaderContainer = styled('header', {
   width: '100%',
   maxWidth: '1216px',
 
-  margin: '0 auto',
-  marginBottom: '3.87rem',
+  margin: '0 auto 3.87rem',
   paddingTop: '2.37em',
 })
 
@@ -27,9 +26,10 @@ export const NavLinkLogo = styled(Link, {
 })
 
 export const NavLink = styled(Link, {
-  fontSize: '1.25em',
-  lineHeight: '1.625em',
+  fontSize: '1.25rem',
+  fontWeight: '500',
   letterSpacing: '4%',
-  color: '$gray900',
+  color: '#333333',
 })
+
 export const Support = styled('div', {})

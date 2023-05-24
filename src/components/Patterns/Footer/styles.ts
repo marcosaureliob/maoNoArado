@@ -44,7 +44,7 @@ export const ContactAddressText = styled('span', {
   color: '#fff',
   fontSize: '1.125rem',
   fontWeight: '400',
-  lineHeight: '28.8px',
+
   letterSpacing: '6%  ',
 })
 
@@ -77,7 +77,6 @@ export const ListOptionsFooter = styled('li', {
     color: '#Fff',
     display: 'block',
     fontSize: '1.125rem',
-    lineHeight: '28.8px',
   },
 })
 
