@@ -14,6 +14,9 @@ import {
   ImageHands,
   PartnerList,
   ImagePartner,
+  DonateSection,
+  DonateBox,
+  ButtonDonate,
 } from '@/styles/page/home'
 import AC from '../assets/partners/ac.svg'
 import Enel from '../assets/partners/enel.svg'
@@ -34,6 +37,13 @@ import Employers from '../assets/employers.svg'
 import People from '../assets/peoples.svg'
 import Hands from '../assets/hands.svg'
 import Image from 'next/image'
+import {
+  HashStraight,
+  GlobeSimple,
+  Handshake,
+  UsersFour,
+  HandHeart,
+} from '@phosphor-icons/react'
 
 export default function Home() {
   return (
@@ -150,8 +160,35 @@ export default function Home() {
       <Title>
         <h2>Doações</h2>
       </Title>
+      <DonateSection>
+        <DonateBox>
+          <HashStraight size={40} />
+          <h2>Fundo social</h2>
+          <div></div>
+        </DonateBox>
+        <DonateBox>
+          <GlobeSimple size={40} />
+          <h2>Cidade Solidária</h2>
+          <div></div>
+        </DonateBox>
+        <DonateBox>
+          <Handshake size={40} />
+          <h2>Parceiros</h2>
+          <div></div>
+        </DonateBox>
+        <DonateBox>
+          <UsersFour size={40} />
+          <h2>Amigos</h2>
+          <div></div>
+        </DonateBox>
+      </DonateSection>
+      <ButtonDonate>
+        <button>
+          COMO AJUDAR <HandHeart size={32} weight="fill" />{' '}
+        </button>
+      </ButtonDonate>
       <Title>
-        <h2>Parceiros que fazem parte deste projeto</h2>
+        <h2>Parceiros que fazem parte deste projeto </h2>
       </Title>
       <PartnerList>
         <ImagePartner>
