@@ -204,5 +204,5 @@ export const PartnerList = styled('section', {
   gap: '1rem',
   flexWrap: 'wrap',
   marginTop: '6.25rem',
-  paddingBottom:'10rem',
+  paddingBottom: '10rem',
 })
