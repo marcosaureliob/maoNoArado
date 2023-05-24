@@ -1,5 +1,4 @@
 import React from 'react'
-import { DeviceMobile, Phone, Envelope } from 'phosphor-react'
 
 import {
   Contact,
@@ -22,6 +21,7 @@ import {
 import { InstagramLogo } from '@/components/InstagramLogo'
 import { FacebookLogo } from '@/components/FacebookLogo'
 import MapContainer from '@/components/Map'
+import { DeviceMobile, Envelope, Phone } from '@phosphor-icons/react'
 
 export const ContactPage = () => {
   return (
