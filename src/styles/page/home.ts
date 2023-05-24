@@ -183,7 +183,30 @@ export const ThirdContainer = styled('section', {
     },
   },
 })
+
+export const BackgroundSection = styled('div', {
+  variants: {
+    marginTop: {
+      true: {
+        marginTop: '10rem',
+      },
+    },
+  },
+
+  position: 'relative',
+  width: '100%',
+  height: '10rem',
+})
+
 export const Title = styled('section', {
+  variants: {
+    marginTop: {
+      true: {
+        marginTop: '6.25rem',
+      },
+    },
+  },
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

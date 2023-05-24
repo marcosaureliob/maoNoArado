@@ -20,9 +20,12 @@ import {
   MaxWidthBox,
   BannerInfo,
   BoxInfo,
+  BackgroundSection,
 } from '@/styles/page/home'
 
 import BackgroundBanner from '@/assets/background-banner.svg'
+import BackgroundProjectTop from '@/assets/background-project-top.svg'
+import BackgroundProjectBottom from '@/assets/background-project-bottom.svg'
 
 import AC from '../assets/partners/ac.svg'
 import Enel from '../assets/partners/enel.svg'
@@ -139,7 +142,17 @@ export default function Home() {
           </ImageKids>
         </MaxWidthBox>
       </SecondContainer>
-      <Title>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectTop}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover', transform: 'scaleX(-1)' }}
+        />
+      </BackgroundSection>
+
+      <Title marginTop>
         <h2>Solução</h2>
       </Title>
       <ThirdContainer>
@@ -148,17 +161,36 @@ export default function Home() {
         </ImageKids>
         <div>
           <h2>
-            O suprimento de carências relacionadas ao nível de escolaridade,
-            qualidade da educação, qualificação profissional potencializa as
-            oportunidades profissionais
+            O suprimento de carências relacionadas ao nível de escolaridade e
+            qualidade da educação.
           </h2>
           <p>
-            Além de impactar com a redução de diversos problemas como a inserção
-            ao uso e tráfico de entorpecentes, prostituição, exploração
-            infantil, entre outras.
+            Qualificação profissional potencializa as oportunidades
+            profissionais. Além de impactar com a redução de diversos problemas
+            como a inserção ao uso e tráfico de entorpecentes, prostituição,
+            exploração infantil, entre outras.
           </p>
         </div>
       </ThirdContainer>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectBottom}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover', transform: 'scaleX(-1)' }}
+        />
+      </BackgroundSection>
+
+      <BackgroundSection marginTop>
+        <Image
+          src={BackgroundProjectTop}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </BackgroundSection>
+
       <Title>
         <h2>Impacto social</h2>
       </Title>
@@ -177,6 +209,16 @@ export default function Home() {
           <Image src={Hands} alt="Peoples" />
         </ImageHands>
       </FourthContainer>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectBottom}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </BackgroundSection>
+
       <Title>
         <h2>Doações</h2>
       </Title>
