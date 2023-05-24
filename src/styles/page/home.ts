@@ -5,8 +5,6 @@ export const HomeContainer = styled('div', {
   maxWidth: '1216px',
 
   margin: '0 auto',
-
-  border: '1px solid red',
 })
 
 export const ImageBox = styled('section', {
@@ -67,8 +65,6 @@ export const ContainerBanner = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  width: '100%',
-  maxWidth: '76rem',
   div: {
     width: '33.8rem',
     h2: {
@@ -114,9 +110,6 @@ export const FirstContainer = styled('section', {
 export const SecondContainer = styled('section', {
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  maxWidth: '75.8rem',
   gap: '3.5rem',
   marginTop: '5rem',
   div: {
@@ -141,8 +134,6 @@ export const ThirdContainer = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '100%',
-  maxWidth: '75.8rem',
   gap: '3.5rem',
   marginTop: '6rem',
   div: {
@@ -167,8 +158,6 @@ export const Title = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '100%',
-  maxWidth: '75.8rem',
   gap: '3.5rem',
   marginTop: '10rem',
 })
@@ -177,8 +166,6 @@ export const FourthContainer = styled('section', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '100%',
-  maxWidth: '75.8rem',
-  marginTop: '6rem',
   div: {
     width: '43.5rem',
     height: '13.5rem',
@@ -201,10 +188,49 @@ export const PartnerList = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '100%',
-  maxWidth: '75.8rem',
   gap: '1rem',
   flexWrap: 'wrap',
   marginTop: '6.25rem',
-  paddingBottom:'10rem',
+  paddingBottom: '10rem',
+})
+export const DonateSection = styled('section', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+  marginTop: '6rem',
+  gap: '4rem',
+})
+export const DonateBox = styled('section', {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  maxWidth: '9.25rem',
+  gap: '1.5rem',
+  h2: {
+    fontSize: '1.2rem',
+    fontWeight: 700,
+    letter: '4%',
+  },
+  svg: {
+    color: '$orange500',
+  },
+  div: {
+    backgroundColor: '#FE8824',
+    background: 'linear-gradient(90deg, #FE8824 0%, #ffffff 100%)',
+    height: '0.2rem',
+  },
+})
+export const ButtonDonate = styled('section', {
+  display: 'flex',
+  justifyContent: 'center',
+  button: {
+    width: '16.5rem',
+    height: '4.5rem',
+    marginTop: '6rem',
+    backgroundColor: '$orange500',
+    color: '#FFFFFF',
+    fontSize: '1.25rem',
+    fontWeight: 700,
+  },
 })
