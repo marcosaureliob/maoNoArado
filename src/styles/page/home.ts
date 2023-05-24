@@ -1,15 +1,14 @@
 import { styled } from '..'
 
 export const HomeContainer = styled('div', {
-  border: '6px solid green',
-
   width: '100%',
   padding: 0,
   boxSizing: 'border-box',
 })
 
 export const ContainerBanner = styled('section', {
-  border: '3px solid red',
+  padding: '13rem 0 6.25rem',
+  position: 'relative',
 
   display: 'flex',
   alignItems: 'center',
@@ -132,8 +131,6 @@ export const FirstContainer = styled('section', {
 })
 
 export const SecondContainer = styled('section', {
-  border: '3px solid red',
-
   marginTop: '10rem',
 
   display: 'flex',

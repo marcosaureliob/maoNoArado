@@ -59,7 +59,7 @@ export default function Home() {
           src={BackgroundBanner}
           alt=""
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'cover', zIndex: -1 }}
         />
 
         <MaxWidthBox>
