@@ -17,7 +17,13 @@ import {
   DonateSection,
   DonateBox,
   ButtonDonate,
+  MaxWidthBox,
+  BannerInfo,
+  BoxInfo,
 } from '@/styles/page/home'
+
+import BackgroundBanner from '@/assets/background-banner.svg'
+
 import AC from '../assets/partners/ac.svg'
 import Enel from '../assets/partners/enel.svg'
 import Fundo from '../assets/partners/fundo-social.svg'
@@ -49,29 +55,39 @@ export default function Home() {
   return (
     <HomeContainer>
       <ContainerBanner>
-        <div>
-          <h2>
-            Promovemos proteção básica, por meio do serviço de convivência e
-            fortalecimento de vínculo as famílias
-          </h2>
-          <p>
-            Além de promover a preparação para o mundo do trabalho e inclusão
-            produtiva, para o desenvolvimento da autonomia, do protagonismo
-            social e da formação cidadã.
-          </p>
-        </div>
-        <ImageBox>
-          <Image
-            src={Banner}
-            alt="Main Banner"
-            fill={true}
-            style={{ objectFit: 'contain' }}
-          />
-        </ImageBox>
+        <Image
+          src={BackgroundBanner}
+          alt=""
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+
+        <MaxWidthBox>
+          <BannerInfo>
+            <h2>
+              Promovemos proteção básica, por meio do serviço de convivência e
+              fortalecimento de vínculo as famílias
+            </h2>
+            <p>
+              Além de promover a preparação para o mundo do trabalho e inclusão
+              produtiva, para o desenvolvimento da autonomia, do protagonismo
+              social e da formação cidadã.
+            </p>
+          </BannerInfo>
+
+          <ImageBox>
+            <Image
+              src={Banner}
+              alt="Main Banner"
+              fill={true}
+              style={{ objectFit: 'contain' }}
+            />
+          </ImageBox>
+        </MaxWidthBox>
       </ContainerBanner>
       <FirstContainer>
         <ImageBolt>
-          <Image src={Lightning} alt="Bolt" />
+          <Image src={Lightning} alt="Bolt" fill />
         </ImageBolt>
         <div>
           <h2>
@@ -86,38 +102,42 @@ export default function Home() {
         </div>
       </FirstContainer>
       <SecondContainer>
-        <ImageKids>
-          <Image src={Kids} alt="Kids" />
-        </ImageKids>
-        <div>
-          <h2>Mão no Arado possui funções importantes na sociedade</h2>
-          <p>
-            Buscamos interagir e ajudar as famílias, por meio do atendimento
-            social com atividades, ações solidárias e projetos de promoção da
-            cultura, esporte, lazer, educação e emprego que visam a superação de
-            todo o tipo de desigualdade social, proteção, combate à fome e
-            promoção da cidadania. Hoje somos reconhecidos com certificado de
-            utilidade Pública.
-          </p>
-        </div>
+        <MaxWidthBox>
+          <ImageKids>
+            <Image src={Kids} alt="Kids" />
+          </ImageKids>
+          <BoxInfo>
+            <h2>Mão no Arado possui funções importantes na sociedade</h2>
+            <p>
+              Buscamos interagir e ajudar as famílias, por meio do atendimento
+              social com atividades, ações solidárias e projetos de promoção da
+              cultura, esporte, lazer, educação e emprego que visam a superação
+              de todo o tipo de desigualdade social, proteção, combate à fome e
+              promoção da cidadania. Hoje somos reconhecidos com certificado de
+              utilidade Pública.
+            </p>
+          </BoxInfo>
+        </MaxWidthBox>
       </SecondContainer>
       <SecondContainer>
-        <div>
-          <h2>
-            A associação tem seu eixo de atuação no atendimento ao serviço de
-            convivência
-          </h2>
-          <p>
-            No fortalecimento de vínculos, com amparo nas Resoluções CNAS
-            109/2009 – CNAS 13/2014 a CNAS 33/2012, que define a promoção da
-            integração ao mercado de trabalho no campo da assistência social,
-            desenvolve atividades de capacitação para integração ao mundo do
-            trabalho.
-          </p>
-        </div>
-        <ImageKids>
-          <Image src={Employers} alt="Kids" />
-        </ImageKids>
+        <MaxWidthBox>
+          <BoxInfo>
+            <h2>
+              A associação tem seu eixo de atuação no atendimento ao serviço de
+              convivência
+            </h2>
+            <p>
+              No fortalecimento de vínculos, com amparo nas Resoluções CNAS
+              109/2009 – CNAS 13/2014 a CNAS 33/2012, que define a promoção da
+              integração ao mercado de trabalho no campo da assistência social,
+              desenvolve atividades de capacitação para integração ao mundo do
+              trabalho.
+            </p>
+          </BoxInfo>
+          <ImageKids>
+            <Image src={Employers} alt="Kids" />
+          </ImageKids>
+        </MaxWidthBox>
       </SecondContainer>
       <Title>
         <h2>Solução</h2>
@@ -191,42 +211,44 @@ export default function Home() {
         <h2>Parceiros que fazem parte deste projeto </h2>
       </Title>
       <PartnerList>
-        <ImagePartner>
-          <Image src={Fundo} alt="Fundo" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Enel} alt="Enel" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Oliveira} alt="Oliveira" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Sabesp} alt="Sabesp" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Mercado} alt="Mercado" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Sebrae} alt="Sebrae" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Geracao} alt="Geracao" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Mao} alt="Maos" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={AC} alt="Ac" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Maes} alt="Maes" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Mulheres} alt="Mulheres" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Sales} alt="Sales" />
-        </ImagePartner>
+        <MaxWidthBox wrap>
+          <ImagePartner>
+            <Image src={Fundo} alt="Fundo" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Enel} alt="Enel" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Oliveira} alt="Oliveira" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Sabesp} alt="Sabesp" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Mercado} alt="Mercado" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Sebrae} alt="Sebrae" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Geracao} alt="Geracao" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Mao} alt="Maos" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={AC} alt="Ac" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Maes} alt="Maes" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Mulheres} alt="Mulheres" />
+          </ImagePartner>
+          <ImagePartner>
+            <Image src={Sales} alt="Sales" />
+          </ImagePartner>
+        </MaxWidthBox>
       </PartnerList>
     </HomeContainer>
   )
