@@ -66,6 +66,7 @@ export const ImagePartner = styled('section', {
   position: 'relative',
 
   width: '11rem',
+  height: '6rem',
 
   display: 'flex',
   alignItems: 'center',

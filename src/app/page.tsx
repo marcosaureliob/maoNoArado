@@ -27,24 +27,15 @@ import BackgroundBanner from '@/assets/background-banner.svg'
 import BackgroundProjectTop from '@/assets/background-project-top.svg'
 import BackgroundProjectBottom from '@/assets/background-project-bottom.svg'
 
-import AC from '../assets/partners/ac.svg'
-import Enel from '../assets/partners/enel.svg'
-import Fundo from '../assets/partners/fundo-social.svg'
-import Geracao from '../assets/partners/geracao.svg'
-import Maes from '../assets/partners/maes-favela.svg'
-import Mao from '../assets/partners/maosementes.svg'
-import Mercado from '../assets/partners/mercadolivre.svg'
-import Mulheres from '../assets/partners/mulheres-brasil.svg'
-import Oliveira from '../assets/partners/oliveira.svg'
-import Sabesp from '../assets/partners/sabesp.svg'
-import Sales from '../assets/partners/salles.svg'
-import Sebrae from '../assets/partners/sebrae.svg'
+import { imagePartners } from '../database/index'
+
 import Banner from '../assets/img-banner.svg'
 import Lightning from '../assets/lightning.svg'
 import Kids from '../assets/kids.svg'
 import Employers from '../assets/employers.svg'
 import People from '../assets/peoples.svg'
 import Hands from '../assets/hands.svg'
+
 import Image from 'next/image'
 import {
   HashStraight,
@@ -254,42 +245,13 @@ export default function Home() {
       </Title>
       <PartnerList>
         <MaxWidthBox wrap>
-          <ImagePartner>
-            <Image src={Fundo} alt="Fundo" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Enel} alt="Enel" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Oliveira} alt="Oliveira" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Sabesp} alt="Sabesp" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Mercado} alt="Mercado" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Sebrae} alt="Sebrae" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Geracao} alt="Geracao" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Mao} alt="Maos" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={AC} alt="Ac" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Maes} alt="Maes" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Mulheres} alt="Mulheres" />
-          </ImagePartner>
-          <ImagePartner>
-            <Image src={Sales} alt="Sales" />
-          </ImagePartner>
+          {imagePartners.map((partner) => {
+            return (
+              <ImagePartner key={partner.title}>
+                <Image src={partner.src} alt={partner.title} fill />
+              </ImagePartner>
+            )
+          })}
         </MaxWidthBox>
       </PartnerList>
     </HomeContainer>
