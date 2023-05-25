@@ -11,6 +11,17 @@ export const ProjectContainer = styled('div', {
   flexDirection: 'column',
 })
 
+export const ProjectBanner = styled('section', {
+  position: 'relative',
+
+  width: '100%',
+  padding: '13rem 0 6.25rem',
+
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+})
+
 export const ImageBox = styled('section', {
   position: 'relative',
 

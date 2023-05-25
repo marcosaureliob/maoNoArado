@@ -2,14 +2,25 @@
 import { styled } from '@/styles'
 import Link from 'next/link'
 export const HeaderContainer = styled('header', {
-  width: '100%',
-  maxWidth: '1216px',
+  position: 'absolute',
+  top: 0,
 
-  margin: '0 auto 3.87rem',
-  paddingTop: '2.37em',
+  zIndex: 1,
+
+  width: '100%',
+
+  // margin: '0 auto 3.87rem',
+  // paddingTop: '2.37em',
+  padding: '2.375rem 0',
+
+  display: 'flex',
+  justifyContent: 'center',
 })
 
 export const HeaderWrapper = styled('div', {
+  width: '100%',
+  maxWidth: '1216px',
+
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',

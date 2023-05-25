@@ -17,25 +17,25 @@ import {
   DonateSection,
   DonateBox,
   ButtonDonate,
+  MaxWidthBox,
+  BannerInfo,
+  BoxInfo,
+  BackgroundSection,
 } from '@/styles/page/home'
-import AC from '../assets/partners/ac.svg'
-import Enel from '../assets/partners/enel.svg'
-import Fundo from '../assets/partners/fundo-social.svg'
-import Geracao from '../assets/partners/geracao.svg'
-import Maes from '../assets/partners/maes-favela.svg'
-import Mao from '../assets/partners/maosementes.svg'
-import Mercado from '../assets/partners/mercadolivre.svg'
-import Mulheres from '../assets/partners/mulheres-brasil.svg'
-import Oliveira from '../assets/partners/oliveira.svg'
-import Sabesp from '../assets/partners/sabesp.svg'
-import Sales from '../assets/partners/salles.svg'
-import Sebrae from '../assets/partners/sebrae.svg'
+
+import BackgroundBanner from '@/assets/background-banner.svg'
+import BackgroundProjectTop from '@/assets/background-project-top.svg'
+import BackgroundProjectBottom from '@/assets/background-project-bottom.svg'
+
+import { imagePartners } from '../database/index'
+
 import Banner from '../assets/img-banner.svg'
 import Lightning from '../assets/lightning.svg'
 import Kids from '../assets/kids.svg'
 import Employers from '../assets/employers.svg'
 import People from '../assets/peoples.svg'
 import Hands from '../assets/hands.svg'
+
 import Image from 'next/image'
 import {
   HashStraight,
@@ -49,29 +49,39 @@ export default function Home() {
   return (
     <HomeContainer>
       <ContainerBanner>
-        <div>
-          <h2>
-            Promovemos proteção básica, por meio do serviço de convivência e
-            fortalecimento de vínculo as famílias
-          </h2>
-          <p>
-            Além de promover a preparação para o mundo do trabalho e inclusão
-            produtiva, para o desenvolvimento da autonomia, do protagonismo
-            social e da formação cidadã.
-          </p>
-        </div>
-        <ImageBox>
-          <Image
-            src={Banner}
-            alt="Main Banner"
-            fill={true}
-            style={{ objectFit: 'contain' }}
-          />
-        </ImageBox>
+        <Image
+          src={BackgroundBanner}
+          alt=""
+          fill
+          style={{ objectFit: 'cover', zIndex: -1 }}
+        />
+
+        <MaxWidthBox>
+          <BannerInfo>
+            <h2>
+              Promovemos proteção básica, por meio do serviço de convivência e
+              fortalecimento de vínculo as famílias
+            </h2>
+            <p>
+              Além de promover a preparação para o mundo do trabalho e inclusão
+              produtiva, para o desenvolvimento da autonomia, do protagonismo
+              social e da formação cidadã.
+            </p>
+          </BannerInfo>
+
+          <ImageBox>
+            <Image
+              src={Banner}
+              alt="Main Banner"
+              fill={true}
+              style={{ objectFit: 'contain' }}
+            />
+          </ImageBox>
+        </MaxWidthBox>
       </ContainerBanner>
       <FirstContainer>
         <ImageBolt>
-          <Image src={Lightning} alt="Bolt" />
+          <Image src={Lightning} alt="Bolt" fill />
         </ImageBolt>
         <div>
           <h2>
@@ -86,40 +96,54 @@ export default function Home() {
         </div>
       </FirstContainer>
       <SecondContainer>
-        <ImageKids>
-          <Image src={Kids} alt="Kids" />
-        </ImageKids>
-        <div>
-          <h2>Mão no Arado possui funções importantes na sociedade</h2>
-          <p>
-            Buscamos interagir e ajudar as famílias, por meio do atendimento
-            social com atividades, ações solidárias e projetos de promoção da
-            cultura, esporte, lazer, educação e emprego que visam a superação de
-            todo o tipo de desigualdade social, proteção, combate à fome e
-            promoção da cidadania. Hoje somos reconhecidos com certificado de
-            utilidade Pública.
-          </p>
-        </div>
+        <MaxWidthBox>
+          <ImageKids>
+            <Image src={Kids} alt="Kids" />
+          </ImageKids>
+          <BoxInfo>
+            <h2>Mão no Arado possui funções importantes na sociedade</h2>
+            <p>
+              Buscamos interagir e ajudar as famílias, por meio do atendimento
+              social com atividades, ações solidárias e projetos de promoção da
+              cultura, esporte, lazer, educação e emprego que visam a superação
+              de todo o tipo de desigualdade social, proteção, combate à fome e
+              promoção da cidadania. Hoje somos reconhecidos com certificado de
+              utilidade Pública.
+            </p>
+          </BoxInfo>
+        </MaxWidthBox>
       </SecondContainer>
       <SecondContainer>
-        <div>
-          <h2>
-            A associação tem seu eixo de atuação no atendimento ao serviço de
-            convivência
-          </h2>
-          <p>
-            No fortalecimento de vínculos, com amparo nas Resoluções CNAS
-            109/2009 – CNAS 13/2014 a CNAS 33/2012, que define a promoção da
-            integração ao mercado de trabalho no campo da assistência social,
-            desenvolve atividades de capacitação para integração ao mundo do
-            trabalho.
-          </p>
-        </div>
-        <ImageKids>
-          <Image src={Employers} alt="Kids" />
-        </ImageKids>
+        <MaxWidthBox>
+          <BoxInfo>
+            <h2>
+              A associação tem seu eixo de atuação no atendimento ao serviço de
+              convivência
+            </h2>
+            <p>
+              No fortalecimento de vínculos, com amparo nas Resoluções CNAS
+              109/2009 – CNAS 13/2014 a CNAS 33/2012, que define a promoção da
+              integração ao mercado de trabalho no campo da assistência social,
+              desenvolve atividades de capacitação para integração ao mundo do
+              trabalho.
+            </p>
+          </BoxInfo>
+          <ImageKids>
+            <Image src={Employers} alt="Kids" />
+          </ImageKids>
+        </MaxWidthBox>
       </SecondContainer>
-      <Title>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectTop}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover', transform: 'scaleX(-1)' }}
+        />
+      </BackgroundSection>
+
+      <Title marginTop>
         <h2>Solução</h2>
       </Title>
       <ThirdContainer>
@@ -128,17 +152,36 @@ export default function Home() {
         </ImageKids>
         <div>
           <h2>
-            O suprimento de carências relacionadas ao nível de escolaridade,
-            qualidade da educação, qualificação profissional potencializa as
-            oportunidades profissionais
+            O suprimento de carências relacionadas ao nível de escolaridade e
+            qualidade da educação.
           </h2>
           <p>
-            Além de impactar com a redução de diversos problemas como a inserção
-            ao uso e tráfico de entorpecentes, prostituição, exploração
-            infantil, entre outras.
+            Qualificação profissional potencializa as oportunidades
+            profissionais. Além de impactar com a redução de diversos problemas
+            como a inserção ao uso e tráfico de entorpecentes, prostituição,
+            exploração infantil, entre outras.
           </p>
         </div>
       </ThirdContainer>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectBottom}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover', transform: 'scaleX(-1)' }}
+        />
+      </BackgroundSection>
+
+      <BackgroundSection marginTop>
+        <Image
+          src={BackgroundProjectTop}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </BackgroundSection>
+
       <Title>
         <h2>Impacto social</h2>
       </Title>
@@ -157,6 +200,16 @@ export default function Home() {
           <Image src={Hands} alt="Peoples" />
         </ImageHands>
       </FourthContainer>
+
+      <BackgroundSection>
+        <Image
+          src={BackgroundProjectBottom}
+          alt=""
+          fill={true}
+          style={{ objectFit: 'cover' }}
+        />
+      </BackgroundSection>
+
       <Title>
         <h2>Doações</h2>
       </Title>
@@ -191,42 +244,15 @@ export default function Home() {
         <h2>Parceiros que fazem parte deste projeto </h2>
       </Title>
       <PartnerList>
-        <ImagePartner>
-          <Image src={Fundo} alt="Fundo" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Enel} alt="Enel" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Oliveira} alt="Oliveira" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Sabesp} alt="Sabesp" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Mercado} alt="Mercado" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Sebrae} alt="Sebrae" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Geracao} alt="Geracao" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Mao} alt="Maos" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={AC} alt="Ac" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Maes} alt="Maes" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Mulheres} alt="Mulheres" />
-        </ImagePartner>
-        <ImagePartner>
-          <Image src={Sales} alt="Sales" />
-        </ImagePartner>
+        <MaxWidthBox wrap>
+          {imagePartners.map((partner) => {
+            return (
+              <ImagePartner key={partner.title}>
+                <Image src={partner.src} alt={partner.title} fill />
+              </ImagePartner>
+            )
+          })}
+        </MaxWidthBox>
       </PartnerList>
     </HomeContainer>
   )
