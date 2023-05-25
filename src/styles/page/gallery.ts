@@ -4,7 +4,7 @@ export const GalleryContainer = styled('section', {
   width: '100%',
   maxWidth: '1216px',
   margin: '0 auto',
-  padding: '32px 0',
+  padding: '13rem 0 2rem',
 
   display: 'flex',
   alignItems: 'center',

@@ -5,6 +5,7 @@ import { styled } from '..'
 export const ProjectContainer = styled('div', {
   width: '100%',
   margin: '0 auto',
+  paddingBottom: '10rem',
 
   display: 'flex',
   alignItems: 'center',

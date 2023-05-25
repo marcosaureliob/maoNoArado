@@ -13,6 +13,21 @@ export const globalStyles = globalCss({
     backgroundColor: '$background',
     color: '$gray900',
     '-webkit-font-smoothing': 'antialiased',
+
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    '&::-webkit-scrollbar': {
+      width: '12px',
+    },
+
+    '&::-webkit-scrollbar-track': {
+      borderRadius: '20px',
+    },
+
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '$orange500',
+      borderRadius: '20px',
+    },
   },
 
   'body, input, textarea, button': {
