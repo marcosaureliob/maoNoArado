@@ -10,6 +10,10 @@ export const ProjectContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
+
+  '@mobile': {
+    paddingBottom: '6.25rem',
+  },
 })
 
 export const ProjectBanner = styled('section', {
@@ -32,6 +36,16 @@ export const ImageBox = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+
+  '@mobile': {
+    padding: '1rem',
+    width: '21.875rem',
+    height: '15.625rem',
+
+    img: {
+      objectFit: 'contain !important',
+    },
+  },
 })
 
 export const BackgroundSection = styled('div', {
@@ -39,6 +53,10 @@ export const BackgroundSection = styled('div', {
     marginTop: {
       true: {
         marginTop: '10rem',
+
+        '@mobile': {
+          marginTop: '6.25rem',
+        },
       },
     },
   },
@@ -62,6 +80,14 @@ export const ProjectBox = styled('section', {
   div: {
     width: '44.125rem',
   },
+
+  '@mobile': {
+    padding: '0 1rem',
+
+    div: {
+      width: '100%',
+    },
+  },
 })
 
 export const BoxTags = styled('div', {
@@ -69,6 +95,10 @@ export const BoxTags = styled('div', {
   flexWrap: 'wrap',
   justifyContent: 'center',
   gap: '4rem 1rem',
+
+  '@mobile': {
+    gap: '1rem 1rem',
+  },
 })
 
 export const Tag = styled('span', {
@@ -89,6 +119,11 @@ export const Tag = styled('span', {
   padding: '1rem 2rem',
   textTransform: 'uppercase',
   letterSpacing: '0.06em',
+
+  '@mobile': {
+    fontSize: '0.625rem',
+    padding: '0.375rem 0.75rem',
+  },
 })
 
 export const BenefitBox = styled('section', {
