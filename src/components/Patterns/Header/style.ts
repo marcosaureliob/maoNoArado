@@ -2,7 +2,7 @@
 import { styled } from '@/styles'
 import Link from 'next/link'
 export const HeaderContainer = styled('header', {
-  position: 'absolute',
+  position: 'fixed',
   top: 0,
 
   zIndex: 1,
@@ -12,9 +12,16 @@ export const HeaderContainer = styled('header', {
   // margin: '0 auto 3.87rem',
   // paddingTop: '2.37em',
   padding: '2.375rem 0',
+  transition: 'background 300ms, padding 300ms',
 
   display: 'flex',
   justifyContent: 'center',
+
+  '&.scrolled': {
+    backgroundColor: '$background',
+    padding: '1rem 0 0 0',
+    zIndex: '1',
+  },
 })
 
 export const HeaderWrapper = styled('div', {

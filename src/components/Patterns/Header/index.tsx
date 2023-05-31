@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Logo from '@/assets/logos.svg'
 import {
@@ -15,8 +15,24 @@ import {
 import { ButtonSupport } from '@/components/ButtonSupport'
 
 export const Header = () => {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0
+
+      setScrolled(isScrolled)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <HeaderContainer>
+    <HeaderContainer className={scrolled ? 'scrolled' : ''}>
       <HeaderWrapper>
         <LogoWrapper>
           <NavLinkLogo href="/">
