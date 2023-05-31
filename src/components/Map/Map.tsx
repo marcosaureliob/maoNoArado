@@ -5,7 +5,7 @@ import 'leaflet-defaulticon-compatibility'
 import { MapWrapper } from './styles'
 const Map = () => {
   return (
-    <MapWrapper>
+    <MapWrapper zIndex1>
       <MapContainer
         center={[40.8054, -74.0241]}
         zoom={14}
