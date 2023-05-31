@@ -28,6 +28,12 @@ export const globalStyles = globalCss({
       backgroundColor: '$orange500',
       borderRadius: '20px',
     },
+
+    '@mobile': {
+      '&::-webkit-scrollbar': {
+        width: '6px',
+      },
+    },
   },
 
   'body, input, textarea, button': {
