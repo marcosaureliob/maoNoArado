@@ -20,7 +20,7 @@ export const HeaderContainer = styled('header', {
   '&.scrolled': {
     backgroundColor: '$background',
     padding: '1rem 0 0 0',
-    zIndex: '1',
+    zIndex: '2',
   },
 })
 
