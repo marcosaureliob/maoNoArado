@@ -16,17 +16,19 @@ export const GalleryContainer = styled('section', {
     fontSize: '2rem',
   },
 
-  h3: {
-    fontSize: '1rem',
-    fontWeight: 'normal',
-  },
-
   span: {
     backgroundColor: '$orange700',
     fontSize: '0.875rem',
     color: '$white',
     borderRadius: '50px',
     padding: '6px 12px',
+  },
+
+  '@mobile': {
+    h2: {
+      fontSize: '1.625rem',
+      textAlign: 'center',
+    },
   },
 })
 
