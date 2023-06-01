@@ -52,5 +52,15 @@ export const ImageContainer = css({
     '&:hover': {
       filter: 'brightness(60%)',
     },
+
+    '@mobileS': {
+      borderRadius: '8px',
+      width: '80px',
+      height: '80px',
+    },
+  },
+
+  '@mobileS': {
+    gap: '3px 3px',
   },
 })
