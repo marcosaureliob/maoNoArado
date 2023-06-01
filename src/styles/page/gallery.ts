@@ -30,6 +30,12 @@ export const GalleryContainer = styled('section', {
       textAlign: 'center',
     },
   },
+
+  '@mobileS': {
+    h2: {
+      padding: '0 0.5rem',
+    },
+  },
 })
 
 export const ImageContainer = css({
