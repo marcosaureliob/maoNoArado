@@ -25,15 +25,16 @@ export const HeaderContainer = styled('header', {
     '@mobile': {
       padding: '1rem 1rem 0',
     },
+    '@tablet': {
+      padding: '1rem 1rem 0',
+    },
   },
 
   '@mobile': {
-    // border: '1px solid red',
     padding: '1rem 1rem 0',
   },
 
-  '@laptop': {
-    // border: '1px solid red',
+  '@tablet': {
     padding: '1rem 1rem 0',
   },
 })
@@ -89,16 +90,12 @@ export const NavHeaderWrapper = styled('nav', {
   transition: 'transform 0.3s ease-in',
 
   '@mobile': {
-    // border: '3px solid red',
-
     width: '100%',
     height: '100vh',
-    // height: 'calc(100vh - 10.875rem)',
     backgroundColor: '$background',
     padding: '2rem 1rem',
 
     position: 'fixed',
-    // top: '10.875rem',
     top: '7.75rem',
     right: '0',
 
