@@ -60,9 +60,9 @@ export const Header = () => {
         </LogoWrapper>
 
         <MobileMenu onClick={handClick}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+          <div className={hasNewClass ? 'line1-active' : ''}></div>
+          <div className={hasNewClass ? 'line2-active' : ''}></div>
+          <div className={hasNewClass ? 'line3-active' : ''}></div>
         </MobileMenu>
 
         <NavHeaderWrapper

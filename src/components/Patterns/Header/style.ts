@@ -60,6 +60,16 @@ export const MobileMenu = styled('nav', {
     backgroundColor: '$gray900',
     margin: '0.5rem',
     transition: '200ms',
+
+    '&.line1-active': {
+      transform: 'rotate(-45deg) translate(-8px, 8px)',
+    },
+    '&.line2-active': {
+      opacity: 0,
+    },
+    '&.line3-active': {
+      transform: 'rotate(45deg) translate(-7px, -7px)',
+    },
   },
 
   '&:hover': {
