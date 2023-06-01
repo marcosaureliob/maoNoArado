@@ -9,6 +9,20 @@ export const FooterWrapper = styled('section', {
   padding: '3.25rem 7rem ',
   display: 'flex',
   justifyContent: 'space-between',
+
+  '@mobile': {
+    padding: '3.25rem 1rem',
+
+    flexDirection: 'column',
+    gap: '4rem',
+  },
+
+  '@tablet': {
+    padding: '3.25rem 1rem',
+
+    flexDirection: 'column',
+    gap: '4rem',
+  },
 })
 
 export const FooterContactContainer = styled('section', {
@@ -82,6 +96,10 @@ export const ListOptionsFooter = styled('li', {
 
 export const SectionActionWrapper = styled('section', {
   marginTop: '2em',
+
+  '@tablet': {
+    width: '12rem',
+  },
 })
 
 export const SocialNetwork = styled('div', {
