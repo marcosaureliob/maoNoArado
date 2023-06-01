@@ -39,6 +39,14 @@ export const HistoryContent = styled('section', {
     letterSpacing: '0.04em',
     color: '$gray-800',
   },
+
+  '@mobile': {
+    padding: '13rem 1rem 6.25rem',
+    h2: { fontSize: '2rem' },
+    p: { fontSize: '1.125rem' },
+  },
+
+  '@tablet': { padding: '13rem 1rem 6.25rem' },
 })
 
 export const CardsContainer = styled('section', {
@@ -49,6 +57,10 @@ export const CardsContainer = styled('section', {
 
   marginTop: '10rem',
   position: 'relative',
+
+  '@mobile': {
+    padding: '0 1rem',
+  },
 })
 
 export const Card = styled('div', {
@@ -58,11 +70,13 @@ export const Card = styled('div', {
   alignItems: 'flex-end',
   padding: '2rem',
   boxSizing: 'border-box',
-  width: '36.88rem',
+  width: '100%',
+  maxWidth: '36.88rem',
   height: '19.5rem',
   paddingBlock: '2rem',
   borderRadius: '1rem',
   backgroundColor: 'rgba(255, 255, 255, 0.5)',
+  filter: 'drop-shadow(4px 4px 16px rgba(0, 0, 0, 0.06))',
 
   div: {
     display: 'flex',
@@ -85,11 +99,10 @@ export const Card = styled('div', {
     color: '$gray-900',
     lineHeight: '160%',
   },
-})
 
-export const Container = styled('section', {
-  width: '50rem',
-  height: '29.81rem',
+  '@mobile': {
+    height: 'auto',
+  },
 })
 
 export const CardPresident = styled('section', {
@@ -108,9 +121,19 @@ export const CardPresident = styled('section', {
     letterSpacing: '0.04em',
     color: '$gray-900',
   },
+
+  '@mobile': {
+    padding: '0 1rem',
+  },
+
+  '@tablet': {
+    padding: '0 1rem',
+  },
 })
 
 export const Wrapper = styled('div', {
+  overflow: 'hidden',
+
   backgroundColor: '$white',
   display: 'flex',
   width: '100%',
@@ -144,4 +167,29 @@ export const Wrapper = styled('div', {
       marginBottom: '2rem',
     },
   },
+
+  '@mobile': {
+    flexDirection: 'column',
+    alignItems: 'center',
+
+    img: {
+      width: '100%',
+      borderRadius: '8px',
+    },
+
+    h3: {
+      fontSize: '1.75rem',
+    },
+
+    p: {
+      fontSize: '1.125rem',
+    },
+  },
+
+  // '@tablet': {
+  //   img: {
+  //     width: '6rem',
+  //     objectFit: 'cover',
+  //   },
+  // },
 })

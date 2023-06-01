@@ -12,7 +12,7 @@ import {
 import Image from 'next/image'
 
 import BackgroundCard from '@/assets/background-card.svg'
-import ProfilePresident from '@/assets/profile.png'
+import ProfilePresident from '@/assets/profilePresident.svg'
 import BackgroundBanner from '../../assets/background-banner.svg'
 
 import { Binoculars, Target } from '@phosphor-icons/react'
@@ -102,15 +102,29 @@ export default function History() {
         <h2>Nossa Presidente</h2>
 
         <Wrapper>
-          <Image src={ProfilePresident} alt="" />
+          <Image
+            src={ProfilePresident}
+            alt="Foto da presidente da ONG"
+            style={{ objectFit: 'cover' }}
+          />
 
           <div>
             <h3>Roseli Machado Ribeiro</h3>
             <p>Presidente da Mão no Arado há mais de 24 anos.</p>
 
             <p>
-              Apaixonada e dedicada em ajudar pessoas, Roseli criou a Associação
-              Mão no Arado há mais de 24 anos.
+              Dedicada em ajudar pessoas, Roseli criou a Associação Mão no
+              Arado.
+            </p>
+
+            <p>
+              Compreendemos plenamente essa missão quando lançamos o Natal
+              Solidário. A primeira edição nos permitiu enxergar a importância
+              de levar esperança, incentivo e apoio para enfrentar situações de
+              extrema vulnerabilidade. Foi ali que iniciamos uma longa jornada
+              de transformar vidas familiares e alcançar resultados
+              significativos, amadurecendo através do desenvolvimento
+              profissional ao longo do tempo.
             </p>
           </div>
         </Wrapper>
