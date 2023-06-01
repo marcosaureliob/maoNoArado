@@ -19,8 +19,22 @@ export const HeaderContainer = styled('header', {
 
   '&.scrolled': {
     backgroundColor: '$background',
-    padding: '1rem 0 0 0',
+    padding: '1rem 0 0',
     zIndex: '2',
+
+    '@mobile': {
+      padding: '1rem 1rem 0',
+    },
+  },
+
+  '@mobile': {
+    // border: '1px solid red',
+    padding: '1rem 1rem 0',
+  },
+
+  '@laptop': {
+    // border: '1px solid red',
+    padding: '1rem 1rem 0',
   },
 })
 
@@ -35,9 +49,59 @@ export const HeaderWrapper = styled('div', {
 
 export const LogoWrapper = styled('div', {})
 
+export const MobileMenu = styled('nav', {
+  cursor: 'pointer',
+  display: 'none',
+
+  div: {
+    width: '2rem',
+    height: '0.1875rem',
+    borderRadius: '50px',
+    backgroundColor: '$gray900',
+    margin: '0.5rem',
+    transition: '200ms',
+  },
+
+  '&:hover': {
+    div: {
+      backgroundColor: '$orange700',
+    },
+  },
+
+  '@mobile': {
+    display: 'initial',
+  },
+})
+
 export const NavHeaderWrapper = styled('nav', {
   display: 'flex',
   gap: '2em',
+  transition: 'transform 0.3s ease-in',
+
+  '@mobile': {
+    // border: '3px solid red',
+
+    width: '100%',
+    height: '100vh',
+    // height: 'calc(100vh - 10.875rem)',
+    backgroundColor: '$background',
+    padding: '2rem 1rem',
+
+    position: 'fixed',
+    // top: '10.875rem',
+    top: '7.75rem',
+    right: '0',
+
+    transform: 'translateX(100%)',
+
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2rem',
+  },
+
+  '&.navHeader-active': {
+    transform: 'translateX(0)',
+  },
 })
 export const NavLinkLogo = styled(Link, {
   background: "url('../../../assets/logo.svg')",
@@ -48,6 +112,50 @@ export const NavLink = styled(Link, {
   fontWeight: '500',
   letterSpacing: '4%',
   color: '#333333',
+
+  '@mobile': {
+    width: '100%',
+    textAlign: 'center',
+    fontWeight: 600,
+    paddingBottom: '0.5rem',
+    borderBottom: '3px solid transparent',
+    transition: 'border-bottom 300ms, color 200ms',
+
+    '&:hover': {
+      color: '$orange500',
+      paddingBottom: '0.5rem',
+      borderBottom: '3px solid $orange500',
+    },
+  },
 })
 
-export const Support = styled('div', {})
+export const ButtonSupportMobile = styled('a', {
+  display: 'none',
+
+  '@mobile': {
+    width: '100%',
+    textTransform: 'uppercase',
+    color: '$white',
+    borderRadius: '6px',
+    padding: '1rem 0',
+    fontSize: '1.25rem',
+    fontWeight: '700',
+    backgroundColor: '$orange500',
+    transition: 'background-color 300ms',
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem',
+
+    '&:hover': {
+      backgroundColor: '$orange700',
+    },
+  },
+})
+
+export const Support = styled('div', {
+  '@mobile': {
+    display: 'none',
+  },
+})

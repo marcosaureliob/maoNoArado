@@ -8,11 +8,14 @@ import {
   HeaderWrapper,
   NavHeaderWrapper,
   LogoWrapper,
+  MobileMenu,
   Support,
   NavLink,
   NavLinkLogo,
+  ButtonSupportMobile,
 } from './style'
 import { ButtonSupport } from '@/components/ButtonSupport'
+import { HandHeart } from '@phosphor-icons/react'
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -31,6 +34,16 @@ export const Header = () => {
     }
   }, [])
 
+  const [hasNewClass, setHasNewClass] = useState(false)
+
+  function handClick() {
+    setHasNewClass(!hasNewClass)
+  }
+
+  function handleItemClick(event: any) {
+    setHasNewClass(false)
+  }
+
   return (
     <HeaderContainer className={scrolled ? 'scrolled' : ''}>
       <HeaderWrapper>
@@ -41,10 +54,21 @@ export const Header = () => {
               alt="Logo Mão no Arado"
               width="103"
               height="104"
+              onClick={handleItemClick}
             />
           </NavLinkLogo>
         </LogoWrapper>
-        <NavHeaderWrapper>
+
+        <MobileMenu onClick={handClick}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </MobileMenu>
+
+        <NavHeaderWrapper
+          className={hasNewClass ? 'navHeader-active' : ''}
+          onClick={handleItemClick}
+        >
           <NavLink href="/history" className="navigationLink">
             Mão no Arado
           </NavLink>
@@ -54,6 +78,11 @@ export const Header = () => {
           <NavLink href="/gallery" className="navigationLink">
             Galeria
           </NavLink>
+
+          <ButtonSupportMobile href="contact">
+            Apoiar
+            <HandHeart size={40} />
+          </ButtonSupportMobile>
         </NavHeaderWrapper>
         <Support>
           <ButtonSupport />
