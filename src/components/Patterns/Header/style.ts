@@ -25,6 +25,7 @@ export const HeaderContainer = styled('header', {
     '@mobile': {
       padding: '1rem 1rem 0',
     },
+
     '@tablet': {
       padding: '1rem 1rem 0',
     },
@@ -48,7 +49,17 @@ export const HeaderWrapper = styled('div', {
   alignItems: 'center',
 })
 
-export const LogoWrapper = styled('div', {})
+export const LogoWrapper = styled('div', {
+  position: 'relative',
+
+  width: '103px',
+  height: '104px',
+
+  '@mobile': {
+    width: '60px',
+    height: '61px',
+  },
+})
 
 export const MobileMenu = styled('nav', {
   cursor: 'pointer',
@@ -96,8 +107,8 @@ export const NavHeaderWrapper = styled('nav', {
     padding: '2rem 1rem',
 
     position: 'fixed',
-    top: '7.75rem',
-    right: '0',
+    top: '4.8125rem',
+    right: 0,
 
     transform: 'translateX(100%)',
 

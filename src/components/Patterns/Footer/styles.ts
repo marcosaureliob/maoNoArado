@@ -36,6 +36,9 @@ export const FooterSocialNetworkContainer = styled('section', {})
 
 export const FooterContactLogoWrapper = styled('div', {
   marginBottom: '2rem',
+  backgroundColor: '$white',
+  width: '103px',
+  height: '104px',
 })
 
 export const FooterContactAddressWrapper = styled('div', {})

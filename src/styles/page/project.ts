@@ -25,6 +25,10 @@ export const ProjectBanner = styled('section', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+
+  '@mobile': {
+    padding: '8rem 1rem 6.25rem',
+  },
 })
 
 export const ImageBox = styled('section', {

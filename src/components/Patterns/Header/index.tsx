@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import Logo from '@/assets/logos.svg'
+import Logo from '@/assets/logo.svg'
 import {
   HeaderContainer,
   HeaderWrapper,
@@ -52,9 +52,9 @@ export const Header = () => {
             <Image
               src={Logo}
               alt="Logo Mão no Arado"
-              width="103"
-              height="104"
               onClick={handleItemClick}
+              style={{ objectFit: 'contain' }}
+              fill
             />
           </NavLinkLogo>
         </LogoWrapper>

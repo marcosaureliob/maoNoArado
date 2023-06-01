@@ -3,7 +3,7 @@ import React from 'react'
 // import { DeviceMobile, Phone, Envelope } from 'phosphor-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Logo from '@/assets/logos.svg'
+import Logo from '@/assets/logo.svg'
 import {
   FooterContactContainer,
   FooterContactLogoWrapper,

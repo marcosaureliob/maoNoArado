@@ -41,7 +41,7 @@ export const HistoryContent = styled('section', {
   },
 
   '@mobile': {
-    padding: '13rem 1rem 6.25rem',
+    padding: '8rem 1rem 6.25rem',
     h2: { fontSize: '2rem' },
     p: { fontSize: '1.125rem' },
   },

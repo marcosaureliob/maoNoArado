@@ -25,6 +25,8 @@ export const GalleryContainer = styled('section', {
   },
 
   '@mobile': {
+    padding: '8rem 1rem 6.25rem',
+
     h2: {
       fontSize: '1.625rem',
       textAlign: 'center',
