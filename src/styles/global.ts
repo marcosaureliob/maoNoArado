@@ -1,3 +1,4 @@
+'use client'
 import { globalCss } from '.'
 
 export const globalStyles = globalCss({
@@ -12,10 +13,36 @@ export const globalStyles = globalCss({
     backgroundColor: '$background',
     color: '$gray900',
     '-webkit-font-smoothing': 'antialiased',
+
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    '&::-webkit-scrollbar': {
+      width: '12px',
+    },
+
+    '&::-webkit-scrollbar-track': {
+      borderRadius: '20px',
+    },
+
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '$orange500',
+      borderRadius: '20px',
+    },
+
+    '@mobile': {
+      '&::-webkit-scrollbar': {
+        width: '6px',
+      },
+    },
   },
 
   'body, input, textarea, button': {
     fontFamily: 'Roboto',
     fontWeight: 400,
+    margin: 0,
+  },
+
+  a: {
+    textDecoration: 'none',
   },
 })

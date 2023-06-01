@@ -3,11 +3,13 @@
 import Image from 'next/image'
 
 import Person from '@/assets/person.svg'
+import BackgroundBanner from '../../assets/background-banner.svg'
 import BackgroundProjectTop from '@/assets/background-project-top.svg'
 import BackgroundProjectBottom from '@/assets/background-project-bottom.svg'
 
 import {
   ImageBox,
+  ProjectBanner,
   BackgroundSection,
   ProjectBox,
   BoxTags,
@@ -19,14 +21,23 @@ import {
 export default function Projects() {
   return (
     <ProjectContainer>
-      <ImageBox>
+      <ProjectBanner>
         <Image
-          src={Person}
-          alt="Pessoas agrupadas, colocando suas mãos unidas uma por cima da outra, simbolizando grupo e união."
-          fill={true}
-          style={{ objectFit: 'cover' }}
+          src={BackgroundBanner}
+          alt=""
+          fill
+          style={{ objectFit: 'cover', zIndex: -1 }}
         />
-      </ImageBox>
+
+        <ImageBox>
+          <Image
+            src={Person}
+            alt="Pessoas agrupadas, colocando suas mãos unidas uma por cima da outra, simbolizando grupo e união."
+            fill={true}
+            style={{ objectFit: 'cover' }}
+          />
+        </ImageBox>
+      </ProjectBanner>
 
       <BackgroundSection>
         <Image

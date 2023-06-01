@@ -4,7 +4,7 @@ export const GalleryContainer = styled('section', {
   width: '100%',
   maxWidth: '1216px',
   margin: '0 auto',
-  padding: '32px 0',
+  padding: '13rem 0 2rem',
 
   display: 'flex',
   alignItems: 'center',
@@ -14,6 +14,21 @@ export const GalleryContainer = styled('section', {
   h2: {
     letterSpacing: '0.04em',
     fontSize: '2rem',
+  },
+
+  span: {
+    backgroundColor: '$orange700',
+    fontSize: '0.875rem',
+    color: '$white',
+    borderRadius: '50px',
+    padding: '6px 12px',
+  },
+
+  '@mobile': {
+    h2: {
+      fontSize: '1.625rem',
+      textAlign: 'center',
+    },
   },
 })
 

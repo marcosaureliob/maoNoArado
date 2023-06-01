@@ -1,3 +1,16 @@
+import Ac from '../assets/partners/ac.svg'
+import Enel from '../assets/partners/enel.svg'
+import Fundo from '../assets/partners/fundo-social.svg'
+import Geracao from '../assets/partners/geracao.svg'
+import Maes from '../assets/partners/maes-favela.svg'
+import Mao from '../assets/partners/maosementes.svg'
+import Mercado from '../assets/partners/mercadolivre.svg'
+import Mulheres from '../assets/partners/mulheres-brasil.svg'
+import Oliveira from '../assets/partners/oliveira.svg'
+import Sabesp from '../assets/partners/sabesp.svg'
+import Sales from '../assets/partners/salles.svg'
+import Sebrae from '../assets/partners/sebrae.svg'
+
 export const imageDatabase = [
   {
     title: 'Imagem de floresta 1',
@@ -50,5 +63,56 @@ export const imageDatabase = [
   {
     title: 'Imagem de floresta 13',
     src: '/image8.jpg',
+  },
+]
+
+export const imagePartners = [
+  {
+    title: 'AC',
+    src: Ac,
+  },
+  {
+    title: 'Fundo',
+    src: Enel,
+  },
+  {
+    title: 'Mães',
+    src: Fundo,
+  },
+  {
+    title: 'Mercado Livre',
+    src: Geracao,
+  },
+  {
+    title: 'Oliveira',
+    src: Maes,
+  },
+  {
+    title: 'Salles',
+    src: Mao,
+  },
+  {
+    title: 'Enel',
+    src: Mercado,
+  },
+  {
+    title: 'Geração',
+    src: Mulheres,
+  },
+  {
+    title: 'Mãos e Mentes',
+    src: Oliveira,
+  },
+  {
+    title: 'Mulheres do Brasil',
+    src: Sabesp,
+  },
+  {
+    title: 'Sabesp',
+    src: Sales,
+  },
+  {
+    title: 'Sebrae',
+    src: Sebrae,
   },
 ]
