@@ -4,6 +4,9 @@ export const HomeContainer = styled('div', {
   width: '100%',
   padding: 0,
   boxSizing: 'border-box',
+  '@mobile': {
+    maxWidth: '24.5rem',
+  },
 })
 
 export const ContainerBanner = styled('section', {
@@ -13,6 +16,9 @@ export const ContainerBanner = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  '@mobile': {
+    maxWidth: '100%',
+  },
 })
 
 export const MaxWidthBox = styled('div', {
@@ -29,6 +35,11 @@ export const MaxWidthBox = styled('div', {
         flexWrap: 'wrap',
       },
     },
+  },
+  '@mobile': {
+    maxWidth: '100%',
+    display: 'flex',
+    flexDirection: 'column',
   },
 })
 
@@ -53,6 +64,21 @@ export const BannerInfo = styled('div', {
     letter: '4%',
     marginTop: '2rem',
   },
+  '@mobile': {
+    width: '100%',
+    gap: '0rem',
+    border: '1px solid $gray800',
+    p: {
+      marginTop: '2rem',
+      fontSize: '1rem',
+    },
+    h2: {
+      marginTop: '2rem',
+      fontSize: '2rem',
+      fontWeight: 700,
+      width: '22.5rem',
+    },
+  },
 })
 
 export const ImageBox = styled('section', {
@@ -60,6 +86,10 @@ export const ImageBox = styled('section', {
 
   width: '39.0625rem',
   height: '34.5rem',
+  '@mobile': {
+    width: '22.5rem',
+    height: '20rem',
+  },
 })
 
 export const ImagePartner = styled('section', {
@@ -71,6 +101,10 @@ export const ImagePartner = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  '@mobile': {
+    width: '4.5rem',
+    height: '2.4rem',
+  },
 })
 
 export const ImageBolt = styled('section', {
@@ -84,6 +118,10 @@ export const ImageBolt = styled('section', {
   justifyContent: 'center',
   marginTop: '10rem',
   marginBottom: '3.125rem',
+  '@mobile': {
+    width: '6rem',
+    height: '8rem',
+  },
 })
 
 export const ImageKids = styled('section', {

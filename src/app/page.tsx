@@ -57,6 +57,14 @@ export default function Home() {
         />
 
         <MaxWidthBox>
+          <ImageBox>
+            <Image
+              src={Banner}
+              alt="Main Banner"
+              fill={true}
+              style={{ objectFit: 'contain' }}
+            />
+          </ImageBox>
           <BannerInfo>
             <h2>
               Promovemos proteção básica, por meio do serviço de convivência e
@@ -68,15 +76,6 @@ export default function Home() {
               social e da formação cidadã.
             </p>
           </BannerInfo>
-
-          <ImageBox>
-            <Image
-              src={Banner}
-              alt="Main Banner"
-              fill={true}
-              style={{ objectFit: 'contain' }}
-            />
-          </ImageBox>
         </MaxWidthBox>
       </ContainerBanner>
       <FirstContainer>
