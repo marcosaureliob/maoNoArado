@@ -29,6 +29,10 @@ export const HeaderContainer = styled('header', {
     '@tablet': {
       padding: '1rem 1rem 0',
     },
+
+    '@laptop': {
+      padding: '1rem 1rem 0',
+    },
   },
 
   '@mobile': {
@@ -37,6 +41,10 @@ export const HeaderContainer = styled('header', {
 
   '@tablet': {
     padding: '1rem 1rem 0',
+  },
+
+  '@laptop': {
+    padding: '2.375rem 1rem 0',
   },
 })
 
