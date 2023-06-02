@@ -57,6 +57,14 @@ export default function Home() {
         />
 
         <MaxWidthBox>
+          <ImageBox>
+            <Image
+              src={Banner}
+              alt="Main Banner"
+              fill={true}
+              style={{ objectFit: 'contain' }}
+            />
+          </ImageBox>
           <BannerInfo>
             <h2>
               Promovemos proteção básica, por meio do serviço de convivência e
@@ -68,15 +76,6 @@ export default function Home() {
               social e da formação cidadã.
             </p>
           </BannerInfo>
-
-          <ImageBox>
-            <Image
-              src={Banner}
-              alt="Main Banner"
-              fill={true}
-              style={{ objectFit: 'contain' }}
-            />
-          </ImageBox>
         </MaxWidthBox>
       </ContainerBanner>
       <FirstContainer>
@@ -96,42 +95,38 @@ export default function Home() {
         </div>
       </FirstContainer>
       <SecondContainer>
-        <MaxWidthBox>
-          <ImageKids>
-            <Image src={Kids} alt="Kids" />
-          </ImageKids>
-          <BoxInfo>
-            <h2>Mão no Arado possui funções importantes na sociedade</h2>
-            <p>
-              Buscamos interagir e ajudar as famílias, por meio do atendimento
-              social com atividades, ações solidárias e projetos de promoção da
-              cultura, esporte, lazer, educação e emprego que visam a superação
-              de todo o tipo de desigualdade social, proteção, combate à fome e
-              promoção da cidadania. Hoje somos reconhecidos com certificado de
-              utilidade Pública.
-            </p>
-          </BoxInfo>
-        </MaxWidthBox>
+        <ImageKids>
+          <Image src={Kids} alt="Kids" />
+        </ImageKids>
+        <BoxInfo>
+          <h2>Mão no Arado possui funções importantes na sociedade</h2>
+          <p>
+            Buscamos interagir e ajudar as famílias, por meio do atendimento
+            social com atividades, ações solidárias e projetos de promoção da
+            cultura, esporte, lazer, educação e emprego que visam a superação de
+            de todo o tipo de desigualdade social, proteção, combate à fome e
+            promoção da cidadania. Hoje somos reconhecidos com certificado de
+            utilidade Pública.
+          </p>
+        </BoxInfo>
       </SecondContainer>
       <SecondContainer>
-        <MaxWidthBox>
-          <BoxInfo>
-            <h2>
-              A associação tem seu eixo de atuação no atendimento ao serviço de
-              convivência
-            </h2>
-            <p>
-              No fortalecimento de vínculos, com amparo nas Resoluções CNAS
-              109/2009 – CNAS 13/2014 a CNAS 33/2012, que define a promoção da
-              integração ao mercado de trabalho no campo da assistência social,
-              desenvolve atividades de capacitação para integração ao mundo do
-              trabalho.
-            </p>
-          </BoxInfo>
-          <ImageKids>
-            <Image src={Employers} alt="Kids" />
-          </ImageKids>
-        </MaxWidthBox>
+        <BoxInfo>
+          <h2>
+            A associação tem seu eixo de atuação no atendimento ao serviço de
+            convivência
+          </h2>
+          <p>
+            No fortalecimento de vínculos, com amparo nas Resoluções CNAS
+            109/2009 – CNAS 13/2014 a CNAS 33/2012, que define a promoção da
+            integração ao mercado de trabalho no campo da assistência social,
+            desenvolve atividades de capacitação para integração ao mundo do
+            trabalho.
+          </p>
+        </BoxInfo>
+        <ImageKids>
+          <Image src={Employers} alt="Kids" />
+        </ImageKids>
       </SecondContainer>
 
       <BackgroundSection>
