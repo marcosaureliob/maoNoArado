@@ -4,80 +4,99 @@ export const HomeContainer = styled('div', {
   width: '100%',
   padding: 0,
   boxSizing: 'border-box',
-  '@mobile': {
-    maxWidth: '24.5rem',
-    padding: '0.5rem 1rem 0.5rem 1rem',
-    justifyContent: 'space-between',
-  },
 })
 
 export const ContainerBanner = styled('section', {
   padding: '13rem 0 6.25rem',
   position: 'relative',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+
   '@mobile': {
-    width: '22.5rem',
-    maxWidth: '100%',
-    gap: '2rem',
-    padding: '0 0 4rem',
-    marginTop: '10rem',
+    padding: '8rem 1rem 6.25rem',
+  },
+
+  '@tablet': {
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+  },
+
+  '@laptop': {
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
   },
 })
 
 export const MaxWidthBox = styled('div', {
   width: '100%',
-  maxWidth: '1216px',
+  maxWidth: '76rem',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+
   variants: {
     wrap: {
       true: {
         flexWrap: 'wrap',
       },
     },
-  },
-  '@mobile': {
-    maxWidth: '100%',
-    display: 'flex',
+    responsiveBanner: {
+      true: {
+        '@mobile': {
+          flexDirection: 'column',
+          gap: '2rem',
+        },
+
+        '@tablet': {
+          gap: '2rem',
+        },
+
+        '@laptop': {
+          gap: '2rem',
+        },
+      },
+    },
   },
 })
 
 export const BannerInfo = styled('div', {
-  width: '542px',
+  width: '100%',
+  maxWidth: '33.875rem',
+
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
+
   h2: {
     fontSize: '2.25rem',
-    lineHeight: '2.925rem',
+    lineHeight: '130%',
     fontWeight: 700,
     letter: '4%',
   },
 
   p: {
     fontSize: '1.25rem',
-    lineHeight: '2rem',
+    lineHeight: '160%',
     fontWeight: 400,
     letter: '4%',
-    marginTop: '2rem',
   },
+
   '@mobile': {
-    width: '100%',
-    gap: '0rem',
-    p: {
-      marginTop: '2rem',
-      fontSize: '1rem',
-      textAlign: 'center',
-    },
     h2: {
-      marginTop: '2rem',
       fontSize: '2rem',
-      fontWeight: 700,
-      width: '22.5rem',
-      textAlign: 'center',
+    },
+
+    p: {
+      fontSize: '1rem',
+    },
+  },
+
+  '@tablet': {
+    h2: {
+      fontSize: '2rem',
     },
   },
 })
@@ -86,8 +105,10 @@ export const ImageBox = styled('section', {
   position: 'relative',
   width: '39.0625rem',
   height: '34.5rem',
+
   '@mobile': {
-    width: '22rem',
+    order: -1,
+    width: '100%',
     height: '20rem',
   },
 })

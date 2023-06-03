@@ -56,15 +56,7 @@ export default function Home() {
           style={{ objectFit: 'cover', zIndex: -1 }}
         />
 
-        <MaxWidthBox>
-          <ImageBox>
-            <Image
-              src={Banner}
-              alt="Main Banner"
-              fill={true}
-              style={{ objectFit: 'contain' }}
-            />
-          </ImageBox>
+        <MaxWidthBox responsiveBanner>
           <BannerInfo>
             <h2>
               Promovemos proteção básica, por meio do serviço de convivência e
@@ -76,8 +68,18 @@ export default function Home() {
               social e da formação cidadã.
             </p>
           </BannerInfo>
+
+          <ImageBox>
+            <Image
+              src={Banner}
+              alt="Na primeira imagem uma garota branca e loira de cabelos curtos, regando plantas com um regador azul. Na segunda imagem, uma criança esta com um brinquedo de fotografia, brincando de fotografar"
+              fill
+              // style={{ objectFit: 'contain' }}
+            />
+          </ImageBox>
         </MaxWidthBox>
       </ContainerBanner>
+
       <FirstContainer>
         <ImageBolt>
           <Image src={Lightning} alt="Bolt" fill />
