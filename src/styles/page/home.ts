@@ -1,14 +1,22 @@
 import { styled } from '..'
 
 export const HomeContainer = styled('div', {
+  border: '1px solid',
+
   width: '100%',
   padding: 0,
   boxSizing: 'border-box',
+
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
 })
 
 export const ContainerBanner = styled('section', {
-  padding: '13rem 0 6.25rem',
   position: 'relative',
+
+  width: '100%',
+  padding: '13rem 0 6.25rem',
 
   display: 'flex',
   alignItems: 'center',
@@ -114,61 +122,60 @@ export const ImageBox = styled('section', {
 })
 
 export const FirstContainer = styled('section', {
+  width: '100%',
+  maxWidth: '63rem',
+  textAlign: 'center',
+  marginTop: '10rem',
+
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  textAlign: 'center',
   justifyContent: 'space-between',
+  gap: '2rem',
+
   div: {
-    width: '63rem',
+    width: '100%',
+    maxWidth: '100%',
+
     h2: {
       fontSize: '2rem',
-      lineHeight: '2.625rem',
+      lineHeight: '130%',
       fontWeight: 700,
       letter: '4%',
     },
+
     p: {
       fontSize: '1.125rem',
-      lineHeight: '1.75rem',
-      fontWeight: 400,
+      lineHeight: '160%',
       letter: '4%',
       marginTop: '1.875rem',
     },
   },
+
   '@mobile': {
-    width: '22.5rem',
-    height: '28rem',
-    gap: '2rem',
-    justifyContent: 'normal',
+    padding: '0 1rem',
+
     div: {
-      width: '22.5rem',
       h2: {
-        fontSize: '1.6rem',
-        textAlign: 'center',
-        lineHeight: '2rem',
-      },
-      p: {
-        fontSize: '1.125rem',
-        textAlign: 'center',
+        fontSize: '1.5rem',
       },
     },
   },
+
+  '@tablet': {
+    padding: '0 1rem',
+  },
 })
+
 export const ImageBolt = styled('section', {
+  width: '206px',
+  height: '128px',
+
   position: 'relative',
-  width: '8rem',
-  height: '8rem',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  marginTop: '10rem',
-  marginBottom: '3.125rem',
-  '@mobile': {
-    width: '6rem',
-    height: '8 rem',
-    marginTop: '0',
-    marginBottom: '0',
-  },
 })
 
 export const SecondContainer = styled('section', {

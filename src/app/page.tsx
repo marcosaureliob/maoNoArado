@@ -82,8 +82,14 @@ export default function Home() {
 
       <FirstContainer>
         <ImageBolt>
-          <Image src={Lightning} alt="Bolt" fill />
+          <Image
+            src={Lightning}
+            alt="Bolt"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
         </ImageBolt>
+
         <div>
           <h2>
             Buscamos ser referência no atendimento social, visando mudar a
@@ -96,6 +102,7 @@ export default function Home() {
           </p>
         </div>
       </FirstContainer>
+
       <SecondContainer>
         <ImageKids>
           <Image src={Kids} alt="Kids" />
