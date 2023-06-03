@@ -1,8 +1,6 @@
 import { styled } from '..'
 
 export const HomeContainer = styled('div', {
-  border: '1px solid',
-
   width: '100%',
   padding: 0,
   boxSizing: 'border-box',
@@ -125,7 +123,6 @@ export const FirstContainer = styled('section', {
   width: '100%',
   maxWidth: '63rem',
   textAlign: 'center',
-  marginTop: '10rem',
 
   display: 'flex',
   flexDirection: 'column',
@@ -165,6 +162,10 @@ export const FirstContainer = styled('section', {
   '@tablet': {
     padding: '0 1rem',
   },
+
+  '@laptop': {
+    padding: '0 1rem',
+  },
 })
 
 export const ImageBolt = styled('section', {
@@ -179,52 +180,101 @@ export const ImageBolt = styled('section', {
 })
 
 export const SecondContainer = styled('section', {
+  width: '100%',
+  maxWidth: '76rem',
+
   marginTop: '10rem',
+
   display: 'flex',
-  justifyContent: 'center',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+
   '@mobile': {
-    width: '23rem',
     marginTop: '6.25rem',
-    gap: '2rem',
+    padding: '0 1rem',
+
     flexDirection: 'column',
+    gap: '2rem',
+  },
+
+  '@tablet': {
+    padding: '0 1rem',
+    gap: '2rem',
+  },
+
+  '@laptop': {
+    padding: '0 1rem',
   },
 })
+
 export const ImageKids = styled('section', {
   position: 'relative',
-  width: '38rem',
-  height: '28.6rem',
+
+  width: '36.875rem',
+  height: '28.75rem',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+
+  variants: {
+    heightEmployers: {
+      true: {
+        height: '25.625rem',
+
+        '@mobile': {
+          height: '16rem',
+        },
+      },
+    },
+  },
+
   '@mobile': {
-    width: '1rem',
-    height: '18rem',
+    width: '100%',
+    height: '20rem',
+    order: -1,
+
+    img: {
+      objectFit: 'contain !important',
+    },
+  },
+
+  '@tablet': {
+    width: '100%',
+    height: '20rem',
+
+    img: {
+      objectFit: 'contain !important',
+    },
   },
 })
 
 export const BoxInfo = styled('div', {
-  width: '35.5rem',
+  width: '100%',
+  maxWidth: '36rem',
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
+
   h2: {
     fontSize: '2rem',
-    lineHeight: '2.625rem',
+    lineHeight: '130%',
     fontWeight: 700,
     letter: '4%',
   },
+
   p: {
     fontSize: '1.125rem',
-    lineHeight: '1.75rem',
-    fontWeight: 400,
-    letter: '4%',
+    lineHeight: '160%',
+    letterSpacing: '4%',
   },
+
   '@mobile': {
-    width: '22.5rem',
     h2: {
-      fontSize: '1.6rem',
+      fontSize: '1.5rem',
       textAlign: 'center',
     },
+
     p: {
       fontSize: '1.125rem',
       textAlign: 'center',

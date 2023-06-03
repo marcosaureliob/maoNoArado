@@ -105,7 +105,7 @@ export default function Home() {
 
       <SecondContainer>
         <ImageKids>
-          <Image src={Kids} alt="Kids" />
+          <Image src={Kids} alt="Kids" fill style={{ objectFit: 'cover' }} />
         </ImageKids>
         <BoxInfo>
           <h2>Mão no Arado possui funções importantes na sociedade</h2>
@@ -119,6 +119,7 @@ export default function Home() {
           </p>
         </BoxInfo>
       </SecondContainer>
+
       <SecondContainer>
         <BoxInfo>
           <h2>
@@ -133,8 +134,13 @@ export default function Home() {
             trabalho.
           </p>
         </BoxInfo>
-        <ImageKids>
-          <Image src={Employers} alt="Kids" />
+        <ImageKids heightEmployers>
+          <Image
+            src={Employers}
+            alt="Kids"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
         </ImageKids>
       </SecondContainer>
 
