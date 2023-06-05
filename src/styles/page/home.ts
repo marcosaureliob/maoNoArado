@@ -282,43 +282,114 @@ export const BoxInfo = styled('div', {
   },
 })
 
-export const ThirdContainer = styled('section', {
+// export const ThirdContainer = styled('section', {
+//   display: 'flex',
+//   alignItems: 'center',
+//   justifyContent: 'center',
+//   border: '1px solid red',
+//   gap: '3.5rem',
+//   marginTop: '6rem',
+//   div: {
+//     width: '32rem',
+//     height: '23.3rem',
+//     h2: {
+//       fontSize: '2rem',
+//       lineHeight: '2.625rem',
+//       fontWeight: 700,
+//       letter: '4%',
+//     },
+//     p: {
+//       fontSize: '1.125rem',
+//       lineHeight: '1.75rem',
+//       fontWeight: 400,
+//       letter: '4%',
+//       marginTop: '2rem',
+//     },
+//     '@mobile': {
+//       width: '22.5rem',
+//       gap: '2rem',
+//       marginTop: '2rem',
+//       flexDirection: 'column',
+//       h2: {
+//         fontSize: '1.6rem',
+//         textAlign: 'center',
+//       },
+//       p: {
+//         fontSize: '1.125rem',
+//         textAlign: 'center',
+//       },
+//     },
+//   },
+// })
+
+export const ContainerTwins = styled('section', {
+  border: '1px solid',
+
+  width: '100%',
+
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '6.25rem',
+
+  h2: {
+    fontSize: '2rem',
+  },
+})
+
+export const BoxContentTwins = styled('section', {
+  border: '1px solid red',
+
+  width: '100%',
+  maxWidth: '76rem',
+
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+})
+
+export const BoxInfoTwins = styled('div', {
+  width: '100%',
+  maxWidth: '35.875rem',
+
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '2rem',
+
+  variants: {
+    widthSocial: {
+      true: {
+        maxWidth: '43.5rem',
+      },
+    },
+  },
+
+  h3: {
+    fontSize: '2rem',
+    lineHeight: '130%',
+    letterSpacing: '0.04em',
+  },
+
+  p: {
+    fontSize: '1.125rem',
+    lineHeight: '160%',
+    letterSpacing: '0.06em',
+  },
+})
+
+export const PictureBox = styled('div', {
+  position: 'relative',
+
+  width: '100%',
+  maxWidth: '36.625rem',
+  height: '27.875rem',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  border: '1px solid red',
-  gap: '3.5rem',
-  marginTop: '6rem',
-  div: {
-    width: '32rem',
-    height: '23.3rem',
-    h2: {
-      fontSize: '2rem',
-      lineHeight: '2.625rem',
-      fontWeight: 700,
-      letter: '4%',
-    },
-    p: {
-      fontSize: '1.125rem',
-      lineHeight: '1.75rem',
-      fontWeight: 400,
-      letter: '4%',
-      marginTop: '2rem',
-    },
-    '@mobile': {
-      width: '22.5rem',
-      gap: '2rem',
-      marginTop: '2rem',
-      flexDirection: 'column',
-      h2: {
-        fontSize: '1.6rem',
-        textAlign: 'center',
-      },
-      p: {
-        fontSize: '1.125rem',
-        textAlign: 'center',
-      },
-    },
+
+  img: {
+    width: '100%',
   },
 })
 
@@ -330,71 +401,59 @@ export const BackgroundSection = styled('div', {
       },
     },
   },
+
   position: 'relative',
   width: '100%',
   height: '10rem',
 })
 
-export const Title = styled('section', {
-  variants: {
-    marginTop: {
-      true: {
-        marginTop: '6.25rem',
-      },
-    },
-  },
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '3.5rem',
-  marginTop: '10rem',
-})
-export const FourthContainer = styled('section', {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  div: {
-    width: '43.5rem',
-    height: '13.5rem',
-    h2: {
-      fontSize: '2rem',
-      lineHeight: '2.625rem',
-      fontWeight: 700,
-      letter: '4%',
-    },
-    p: {
-      fontSize: '1.125rem',
-      lineHeight: '1.75rem',
-      fontWeight: 400,
-      letter: '4%',
-      marginTop: '2rem',
-    },
-    '@mobile': {
-      width: '22.5rem',
-      gap: '2rem',
-      flexDirection: 'column',
-      h2: {
-        fontSize: '1.6rem',
-        textAlign: 'center',
-      },
-      p: {
-        fontSize: '1.125rem',
-        textAlign: 'center',
-        marginTop: '0',
-      },
-    },
-  },
-})
-export const ImageHands = styled('section', {
-  position: 'relative',
-  width: '29rem',
-  height: '27.875rem',
+// export const FourthContainer = styled('section', {
+//   display: 'flex',
+//   alignItems: 'center',
+//   justifyContent: 'center',
+//   width: '100%',
+//   div: {
+//     width: '43.5rem',
+//     height: '13.5rem',
+//     h2: {
+//       fontSize: '2rem',
+//       lineHeight: '2.625rem',
+//       fontWeight: 700,
+//       letter: '4%',
+//     },
+//     p: {
+//       fontSize: '1.125rem',
+//       lineHeight: '1.75rem',
+//       fontWeight: 400,
+//       letter: '4%',
+//       marginTop: '2rem',
+//     },
+//     '@mobile': {
+//       width: '22.5rem',
+//       gap: '2rem',
+//       flexDirection: 'column',
+//       h2: {
+//         fontSize: '1.6rem',
+//         textAlign: 'center',
+//       },
+//       p: {
+//         fontSize: '1.125rem',
+//         textAlign: 'center',
+//         marginTop: '0',
+//       },
+//     },
+//   },
+// })
 
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-})
+// export const ImageHands = styled('section', {
+//   position: 'relative',
+//   width: '29rem',
+//   height: '27.875rem',
+
+//   display: 'flex',
+//   alignItems: 'center',
+//   justifyContent: 'center',
+// })
 
 export const DonateSection = styled('section', {
   display: 'flex',

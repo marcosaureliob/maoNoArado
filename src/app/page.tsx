@@ -8,10 +8,6 @@ import {
   ImageBolt,
   SecondContainer,
   ImageKids,
-  ThirdContainer,
-  Title,
-  FourthContainer,
-  ImageHands,
   PartnerList,
   ImagePartner,
   DonateSection,
@@ -21,6 +17,10 @@ import {
   BannerInfo,
   BoxInfo,
   BackgroundSection,
+  ContainerTwins,
+  PictureBox,
+  BoxContentTwins,
+  BoxInfoTwins,
 } from '@/styles/page/home'
 
 import BackgroundBanner from '@/assets/background-banner.svg'
@@ -107,6 +107,7 @@ export default function Home() {
         <ImageKids>
           <Image src={Kids} alt="Kids" fill style={{ objectFit: 'cover' }} />
         </ImageKids>
+
         <BoxInfo>
           <h2>Mão no Arado possui funções importantes na sociedade</h2>
           <p>
@@ -144,7 +145,7 @@ export default function Home() {
         </ImageKids>
       </SecondContainer>
 
-      <BackgroundSection>
+      <BackgroundSection marginTop>
         <Image
           src={BackgroundProjectTop}
           alt=""
@@ -153,26 +154,34 @@ export default function Home() {
         />
       </BackgroundSection>
 
-      <Title marginTop>
+      <ContainerTwins>
         <h2>Solução</h2>
-      </Title>
-      <ThirdContainer>
-        <ImageKids>
-          <Image src={People} alt="Peoples" />
-        </ImageKids>
-        <div>
-          <h2>
-            O suprimento de carências relacionadas ao nível de escolaridade e
-            qualidade da educação.
-          </h2>
-          <p>
-            Qualificação profissional potencializa as oportunidades
-            profissionais. Além de impactar com a redução de diversos problemas
-            como a inserção ao uso e tráfico de entorpecentes, prostituição,
-            exploração infantil, entre outras.
-          </p>
-        </div>
-      </ThirdContainer>
+
+        <BoxContentTwins>
+          <PictureBox>
+            <Image
+              src={People}
+              alt="Peoples"
+              style={{ objectFit: 'cover', objectPosition: '50% -50px' }}
+            />
+          </PictureBox>
+
+          <BoxInfoTwins>
+            <h3>
+              O suprimento de carências relacionadas ao nível de escolaridade,
+              qualidade da educação, qualificação profissional potencializa as
+              oportunidades profissionais
+            </h3>
+
+            <p>
+              Qualificação profissional potencializa as oportunidades
+              profissionais. Além de impactar com a redução de diversos
+              problemas como a inserção ao uso e tráfico de entorpecentes,
+              prostituição, exploração infantil, entre outras.
+            </p>
+          </BoxInfoTwins>
+        </BoxContentTwins>
+      </ContainerTwins>
 
       <BackgroundSection>
         <Image
@@ -192,24 +201,31 @@ export default function Home() {
         />
       </BackgroundSection>
 
-      <Title>
+      <ContainerTwins>
         <h2>Impacto social</h2>
-      </Title>
-      <FourthContainer>
-        <div>
-          <h2>
-            A oferta de cursos de capacitação tem sido uma iniciativa primordial
-            e relevante na Associação
-          </h2>
-          <p>
-            Promovemos a ampliação do processo participativo, a integração,
-            emancipação e protagonismo das famílias.
-          </p>
-        </div>
-        <ImageHands>
-          <Image src={Hands} alt="Peoples" />
-        </ImageHands>
-      </FourthContainer>
+
+        <BoxContentTwins>
+          <BoxInfoTwins widthSocial>
+            <h3>
+              A oferta de cursos de capacitação tem sido uma iniciativa
+              primordial e relevante na Associação
+            </h3>
+
+            <p>
+              Promovemos a ampliação do processo participativo, a integração,
+              emancipação e protagonismo das famílias.
+            </p>
+          </BoxInfoTwins>
+
+          <PictureBox>
+            <Image
+              src={Hands}
+              alt="Peoples"
+              style={{ objectFit: 'cover', objectPosition: '0 0' }}
+            />
+          </PictureBox>
+        </BoxContentTwins>
+      </ContainerTwins>
 
       <BackgroundSection>
         <Image
@@ -220,10 +236,8 @@ export default function Home() {
         />
       </BackgroundSection>
 
-      <Title>
-        <h2>Doações</h2>
-      </Title>
       <DonateSection>
+        <h2>Doações</h2>
         <DonateBox>
           <HashStraight size={40} />
           <h2>Fundo social</h2>
@@ -250,10 +264,9 @@ export default function Home() {
           COMO AJUDAR <HandHeart size={32} weight="fill" />{' '}
         </button>
       </ButtonDonate>
-      <Title>
-        <h2>Parceiros que fazem parte deste projeto </h2>
-      </Title>
+
       <PartnerList>
+        <h2>Parceiros que fazem parte deste projeto </h2>
         <MaxWidthBox wrap>
           {imagePartners.map((partner) => {
             return (
