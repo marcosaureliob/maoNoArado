@@ -282,49 +282,7 @@ export const BoxInfo = styled('div', {
   },
 })
 
-// export const ThirdContainer = styled('section', {
-//   display: 'flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-//   border: '1px solid red',
-//   gap: '3.5rem',
-//   marginTop: '6rem',
-//   div: {
-//     width: '32rem',
-//     height: '23.3rem',
-//     h2: {
-//       fontSize: '2rem',
-//       lineHeight: '2.625rem',
-//       fontWeight: 700,
-//       letter: '4%',
-//     },
-//     p: {
-//       fontSize: '1.125rem',
-//       lineHeight: '1.75rem',
-//       fontWeight: 400,
-//       letter: '4%',
-//       marginTop: '2rem',
-//     },
-//     '@mobile': {
-//       width: '22.5rem',
-//       gap: '2rem',
-//       marginTop: '2rem',
-//       flexDirection: 'column',
-//       h2: {
-//         fontSize: '1.6rem',
-//         textAlign: 'center',
-//       },
-//       p: {
-//         fontSize: '1.125rem',
-//         textAlign: 'center',
-//       },
-//     },
-//   },
-// })
-
 export const ContainerTwins = styled('section', {
-  border: '1px solid',
-
   width: '100%',
 
   display: 'flex',
@@ -338,8 +296,6 @@ export const ContainerTwins = styled('section', {
 })
 
 export const BoxContentTwins = styled('section', {
-  border: '1px solid red',
-
   width: '100%',
   maxWidth: '76rem',
 
@@ -479,57 +435,7 @@ export const BackgroundSection = styled('div', {
   height: '10rem',
 })
 
-// export const FourthContainer = styled('section', {
-//   display: 'flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-//   width: '100%',
-//   div: {
-//     width: '43.5rem',
-//     height: '13.5rem',
-//     h2: {
-//       fontSize: '2rem',
-//       lineHeight: '2.625rem',
-//       fontWeight: 700,
-//       letter: '4%',
-//     },
-//     p: {
-//       fontSize: '1.125rem',
-//       lineHeight: '1.75rem',
-//       fontWeight: 400,
-//       letter: '4%',
-//       marginTop: '2rem',
-//     },
-//     '@mobile': {
-//       width: '22.5rem',
-//       gap: '2rem',
-//       flexDirection: 'column',
-//       h2: {
-//         fontSize: '1.6rem',
-//         textAlign: 'center',
-//       },
-//       p: {
-//         fontSize: '1.125rem',
-//         textAlign: 'center',
-//         marginTop: '0',
-//       },
-//     },
-//   },
-// })
-
-// export const ImageHands = styled('section', {
-//   position: 'relative',
-//   width: '29rem',
-//   height: '27.875rem',
-
-//   display: 'flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-// })
-
 export const DonateSectionContainer = styled('section', {
-  border: '1px solid',
-
   width: '100%',
   marginTop: '6rem',
 
@@ -549,7 +455,9 @@ export const DonateBoxContainer = styled('div', {
   gap: '4rem',
 
   '@mobile': {
+    width: '100%',
     flexWrap: 'wrap',
+    flexDirection: 'column',
   },
 })
 
@@ -572,6 +480,10 @@ export const DonateBox = styled('div', {
     backgroundColor: '#FE8824',
     background: 'linear-gradient(90deg, #FE8824 0%, #ffffff 100%)',
     height: '0.2rem',
+  },
+
+  '@mobile': {
+    width: '100%',
   },
 })
 
@@ -596,8 +508,6 @@ export const ButtonDonate = styled('a', {
 })
 
 export const PartnerList = styled('section', {
-  border: '1px solid',
-
   marginTop: '10rem',
   marginBottom: '10rem',
 
