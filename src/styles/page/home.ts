@@ -541,7 +541,7 @@ export const ImagePartner = styled('section', {
   justifyContent: 'center',
 
   '@mobile': {
-    width: '4.5rem',
-    height: '2.4rem',
+    width: '6.5rem',
+    height: '4.4rem',
   },
 })
