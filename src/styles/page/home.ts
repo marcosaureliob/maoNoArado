@@ -537,12 +537,20 @@ export const DonateSectionContainer = styled('section', {
   alignItems: 'center',
   flexDirection: 'column',
   gap: '6.25rem',
+
+  '@mobile': {
+    padding: '0 1rem',
+  },
 })
 
 export const DonateBoxContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '4rem',
+
+  '@mobile': {
+    flexWrap: 'wrap',
+  },
 })
 
 export const DonateBox = styled('div', {
@@ -566,6 +574,7 @@ export const DonateBox = styled('div', {
     height: '0.2rem',
   },
 })
+
 export const ButtonDonate = styled('a', {
   padding: '1rem 2rem',
   fontWeight: 700,
