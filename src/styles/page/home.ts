@@ -596,27 +596,40 @@ export const ButtonDonate = styled('a', {
 })
 
 export const PartnerList = styled('section', {
+  border: '1px solid',
+
+  marginTop: '10rem',
+  marginBottom: '10rem',
+
   display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '1rem',
-  flexWrap: 'wrap',
-  marginTop: '6.25rem',
-  paddingBottom: '10rem',
+  flexDirection: 'column',
+  gap: '6.25rem',
+
+  h2: {
+    fontSize: '2rem',
+    textAlign: 'center',
+  },
+
   '@mobile': {
+    width: '100%',
+    padding: '0 1rem',
+
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: '2rem',
-    width: '22.5rem',
+    gap: '4rem',
   },
 })
+
 export const ImagePartner = styled('section', {
   position: 'relative',
+
   width: '11rem',
   height: '6rem',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+
   '@mobile': {
     width: '4.5rem',
     height: '2.4rem',

@@ -269,6 +269,7 @@ export default function Home() {
 
       <PartnerList>
         <h2>Parceiros que fazem parte deste projeto </h2>
+
         <MaxWidthBox wrap>
           {imagePartners.map((partner) => {
             return (
