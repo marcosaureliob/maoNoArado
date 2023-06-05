@@ -527,47 +527,65 @@ export const BackgroundSection = styled('div', {
 //   justifyContent: 'center',
 // })
 
-export const DonateSection = styled('section', {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
+export const DonateSectionContainer = styled('section', {
+  border: '1px solid',
+
   width: '100%',
   marginTop: '6rem',
+
+  display: 'flex',
+  alignItems: 'center',
+  flexDirection: 'column',
+  gap: '6.25rem',
+})
+
+export const DonateBoxContainer = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
   gap: '4rem',
 })
-export const DonateBox = styled('section', {
+
+export const DonateBox = styled('div', {
   display: 'flex',
-  flexDirection: 'column',
-  width: '100%',
-  maxWidth: '9.25rem',
   gap: '1.5rem',
+  flexDirection: 'column',
+
   h2: {
     fontSize: '1.2rem',
     fontWeight: 700,
     letter: '4%',
   },
+
   svg: {
     color: '$orange500',
   },
+
   div: {
     backgroundColor: '#FE8824',
     background: 'linear-gradient(90deg, #FE8824 0%, #ffffff 100%)',
     height: '0.2rem',
   },
 })
-export const ButtonDonate = styled('section', {
+export const ButtonDonate = styled('a', {
+  padding: '1rem 2rem',
+  fontWeight: 700,
+  fontSize: '1.25rem',
+  backgroundColor: '$orange500',
+  color: '$white',
+  borderRadius: '6px',
+  cursor: 'pointer',
+  transition: '300ms',
+
   display: 'flex',
+  alignItems: 'center',
   justifyContent: 'center',
-  button: {
-    width: '16.5rem',
-    height: '4.5rem',
-    marginTop: '6rem',
-    backgroundColor: '$orange500',
-    color: '#FFFFFF',
-    fontSize: '1.25rem',
-    fontWeight: 700,
+  gap: '1rem',
+
+  '&:hover': {
+    backgroundColor: '$orange700',
   },
 })
+
 export const PartnerList = styled('section', {
   display: 'flex',
   alignItems: 'center',

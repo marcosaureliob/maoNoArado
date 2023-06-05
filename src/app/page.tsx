@@ -10,7 +10,7 @@ import {
   ImageKids,
   PartnerList,
   ImagePartner,
-  DonateSection,
+  DonateSectionContainer,
   DonateBox,
   ButtonDonate,
   MaxWidthBox,
@@ -21,6 +21,7 @@ import {
   PictureBox,
   BoxContentTwins,
   BoxInfoTwins,
+  DonateBoxContainer,
 } from '@/styles/page/home'
 
 import BackgroundBanner from '@/assets/background-banner.svg'
@@ -232,34 +233,39 @@ export default function Home() {
         />
       </BackgroundSection>
 
-      <DonateSection>
+      <DonateSectionContainer>
         <h2>Doações</h2>
-        <DonateBox>
-          <HashStraight size={40} />
-          <h2>Fundo social</h2>
-          <div></div>
-        </DonateBox>
-        <DonateBox>
-          <GlobeSimple size={40} />
-          <h2>Cidade Solidária</h2>
-          <div></div>
-        </DonateBox>
-        <DonateBox>
-          <Handshake size={40} />
-          <h2>Parceiros</h2>
-          <div></div>
-        </DonateBox>
-        <DonateBox>
-          <UsersFour size={40} />
-          <h2>Amigos</h2>
-          <div></div>
-        </DonateBox>
-      </DonateSection>
-      <ButtonDonate>
-        <button>
-          COMO AJUDAR <HandHeart size={32} weight="fill" />{' '}
-        </button>
-      </ButtonDonate>
+
+        <DonateBoxContainer>
+          <DonateBox>
+            <HashStraight size={40} />
+            <h2>Fundo social</h2>
+            <div></div>
+          </DonateBox>
+
+          <DonateBox>
+            <GlobeSimple size={40} />
+            <h2>Cidade Solidária</h2>
+            <div></div>
+          </DonateBox>
+
+          <DonateBox>
+            <Handshake size={40} />
+            <h2>Parceiros</h2>
+            <div></div>
+          </DonateBox>
+
+          <DonateBox>
+            <UsersFour size={40} />
+            <h2>Amigos</h2>
+            <div></div>
+          </DonateBox>
+        </DonateBoxContainer>
+
+        <ButtonDonate href="contact">
+          COMO AJUDAR <HandHeart size={40} />
+        </ButtonDonate>
+      </DonateSectionContainer>
 
       <PartnerList>
         <h2>Parceiros que fazem parte deste projeto </h2>
