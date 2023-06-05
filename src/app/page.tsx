@@ -217,12 +217,8 @@ export default function Home() {
             </p>
           </BoxInfoTwins>
 
-          <PictureBox>
-            <Image
-              src={Hands}
-              alt="Peoples"
-              style={{ objectFit: 'cover', objectPosition: '0 0' }}
-            />
+          <PictureBox order objectPosition>
+            <Image src={Hands} alt="Peoples" style={{ objectFit: 'cover' }} />
           </PictureBox>
         </BoxContentTwins>
       </ContainerTwins>

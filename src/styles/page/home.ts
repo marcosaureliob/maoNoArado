@@ -346,6 +346,24 @@ export const BoxContentTwins = styled('section', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
+
+  '@mobile': {
+    padding: '0 1rem',
+
+    flexDirection: 'column',
+    gap: '2rem',
+  },
+
+  '@tablet': {
+    padding: '0 1rem',
+
+    flexDirection: 'column',
+    gap: '2rem',
+  },
+
+  '@laptop': {
+    padding: '0 1rem',
+  },
 })
 
 export const BoxInfoTwins = styled('div', {
@@ -360,6 +378,10 @@ export const BoxInfoTwins = styled('div', {
     widthSocial: {
       true: {
         maxWidth: '43.5rem',
+
+        '@tablet': {
+          maxWidth: '35.875rem',
+        },
       },
     },
   },
@@ -375,6 +397,16 @@ export const BoxInfoTwins = styled('div', {
     lineHeight: '160%',
     letterSpacing: '0.06em',
   },
+
+  '@mobile': {
+    h3: {
+      fontSize: '1.5rem',
+    },
+
+    p: {
+      fontSize: '1.125rem',
+    },
+  },
 })
 
 export const PictureBox = styled('div', {
@@ -388,8 +420,48 @@ export const PictureBox = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
 
+  variants: {
+    order: {
+      true: {
+        '@mobile': {
+          order: '-1',
+        },
+
+        '@tablet': {
+          order: '-1',
+        },
+      },
+    },
+    objectPosition: {
+      true: {
+        img: {
+          objectPosition: '0 0',
+
+          '@tablet': {
+            objectPosition: 'initial',
+          },
+
+          '@laptop': {
+            objectPosition: 'initial',
+          },
+        },
+      },
+    },
+  },
+
   img: {
     width: '100%',
+  },
+
+  '@mobile': {
+    height: '16rem',
+
+    img: {
+      height: '16rem',
+      objectFit: 'contain !important',
+
+      objectPosition: 'initial !important',
+    },
   },
 })
 
