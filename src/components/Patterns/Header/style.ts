@@ -9,8 +9,6 @@ export const HeaderContainer = styled('header', {
 
   width: '100%',
 
-  // margin: '0 auto 3.87rem',
-  // paddingTop: '2.37em',
   padding: '2.375rem 0',
   transition: 'background 300ms, padding 300ms',
 
@@ -107,6 +105,22 @@ export const NavHeaderWrapper = styled('nav', {
   display: 'flex',
   gap: '2em',
   transition: 'transform 0.3s ease-in',
+
+  a: {
+    borderBottom: '3px solid transparent',
+    padding: '0.5rem',
+
+    transition: 'border 300ms, color 200ms',
+
+    '&.active': {
+      color: '$orange700',
+    },
+
+    '&:hover': {
+      color: '$orange500',
+      borderBottom: '3px solid $orange500',
+    },
+  },
 
   '@mobile': {
     width: '100%',

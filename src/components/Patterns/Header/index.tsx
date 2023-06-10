@@ -19,6 +19,7 @@ import { HandHeart } from '@phosphor-icons/react'
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false)
+  const [url, setUrl] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +42,16 @@ export const Header = () => {
   }
 
   function handleItemClick(event: any) {
+    const getUrl = event.target.href
+
+    if (getUrl) {
+      const getLastString = getUrl.substring(getUrl.lastIndexOf('/'))
+
+      setUrl(getLastString)
+    } else {
+      setUrl('')
+    }
+
     setHasNewClass(false)
   }
 
@@ -69,22 +80,31 @@ export const Header = () => {
           className={hasNewClass ? 'navHeader-active' : ''}
           onClick={handleItemClick}
         >
-          <NavLink href="/history" className="navigationLink">
+          <NavLink
+            href="/history"
+            className={url === '/history' ? 'active' : ''}
+          >
             Mão no Arado
           </NavLink>
-          <NavLink href="/project" className="navigationLink">
+          <NavLink
+            href="/project"
+            className={url === '/project' ? 'active' : ''}
+          >
             Projetos
           </NavLink>
-          <NavLink href="/gallery" className="navigationLink">
+          <NavLink
+            href="/gallery"
+            className={url === '/gallery' ? 'active' : ''}
+          >
             Galeria
           </NavLink>
 
-          <ButtonSupportMobile href="contact">
+          <ButtonSupportMobile href="/contact">
             Apoiar
             <HandHeart size={40} />
           </ButtonSupportMobile>
         </NavHeaderWrapper>
-        <Support>
+        <Support onClick={handleItemClick}>
           <ButtonSupport />
         </Support>
       </HeaderWrapper>
