@@ -6,10 +6,15 @@ export const ButtonSupportWrapper = styled(Link, {
   alignItems: 'center',
   padding: '1rem 2rem',
 
-  background: '#FE8824',
+  backgroundColor: '$orange500',
   gap: '1rem',
   color: '#FFF',
   borderRadius: '6px',
+  transition: 'background-color 300ms',
+
+  '&:hover': {
+    backgroundColor: '$orange700',
+  },
 })
 export const TextButton = styled('span', {
   fontSize: '1rem',

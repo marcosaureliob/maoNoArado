@@ -99,10 +99,7 @@ export const ListOptionsFooter = styled('li', {
 
 export const SectionActionWrapper = styled('section', {
   marginTop: '2em',
-
-  '@tablet': {
-    width: '12rem',
-  },
+  maxWidth: '26rem',
 })
 
 export const SocialNetwork = styled('div', {
