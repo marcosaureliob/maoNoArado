@@ -62,7 +62,7 @@ export const ContactPage = () => {
               Nossas Redes Sociais
             </TitleInformationWrapper>
             <ContainerInformations>
-              <Contact>
+              <Contact socialMedia>
                 <InstagramLogo width={40} height={40} fill="#4F4F4F" />
                 <FacebookLogo width={40} height={40} fill="#4F4F4F" />
               </Contact>

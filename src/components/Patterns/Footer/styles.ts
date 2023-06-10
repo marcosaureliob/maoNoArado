@@ -106,4 +106,9 @@ export const SocialNetwork = styled('div', {
   display: 'flex',
   marginTop: '2em',
   gap: '1em',
+
+  'svg:hover path': {
+    transition: 'fill 300ms',
+    fill: '$gray200',
+  },
 })

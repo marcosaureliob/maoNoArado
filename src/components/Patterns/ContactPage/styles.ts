@@ -68,6 +68,17 @@ export const Contact = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '1rem',
+
+  variants: {
+    socialMedia: {
+      true: {
+        'svg:hover path': {
+          transition: 'fill 300ms',
+          fill: '$orange500',
+        },
+      },
+    },
+  },
 })
 
 export const TextContact = styled('p', {
