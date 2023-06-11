@@ -80,14 +80,13 @@ export const BannerInfo = styled('div', {
     fontSize: '2.25rem',
     lineHeight: '130%',
     fontWeight: 700,
-    letter: '4%',
   },
 
   p: {
     fontSize: '1.25rem',
     lineHeight: '160%',
     fontWeight: 400,
-    letter: '4%',
+    color: '$gray800',
   },
 
   '@mobile': {
@@ -257,16 +256,15 @@ export const BoxInfo = styled('div', {
   gap: '2rem',
 
   h2: {
-    fontSize: '2rem',
+    fontSize: '2.25rem',
     lineHeight: '130%',
     fontWeight: 700,
-    letter: '4%',
   },
 
   p: {
-    fontSize: '1.125rem',
+    fontSize: '1.25rem',
     lineHeight: '160%',
-    letterSpacing: '4%',
+    color: '$gray800',
   },
 
   '@mobile': {
@@ -345,13 +343,12 @@ export const BoxInfoTwins = styled('div', {
   h3: {
     fontSize: '2rem',
     lineHeight: '130%',
-    letterSpacing: '0.04em',
   },
 
   p: {
     fontSize: '1.125rem',
     lineHeight: '160%',
-    letterSpacing: '0.06em',
+    color: '$gray800',
   },
 
   '@mobile': {
@@ -444,6 +441,11 @@ export const DonateSectionContainer = styled('section', {
   flexDirection: 'column',
   gap: '6.25rem',
 
+  h2: {
+    fontSize: '2rem',
+    fontWeight: 700,
+  },
+
   '@mobile': {
     padding: '0 1rem',
   },
@@ -466,10 +468,9 @@ export const DonateBox = styled('div', {
   gap: '1.5rem',
   flexDirection: 'column',
 
-  h2: {
-    fontSize: '1.2rem',
+  h3: {
+    fontSize: '1.5rem',
     fontWeight: 700,
-    letter: '4%',
   },
 
   svg: {
@@ -487,26 +488,6 @@ export const DonateBox = styled('div', {
   },
 })
 
-export const ButtonDonate = styled('a', {
-  padding: '1rem 2rem',
-  fontWeight: 700,
-  fontSize: '1.25rem',
-  backgroundColor: '$orange500',
-  color: '$white',
-  borderRadius: '6px',
-  cursor: 'pointer',
-  transition: '300ms',
-
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '1rem',
-
-  '&:hover': {
-    backgroundColor: '$orange700',
-  },
-})
-
 export const PartnerList = styled('section', {
   marginTop: '10rem',
   marginBottom: '10rem',
@@ -518,6 +499,7 @@ export const PartnerList = styled('section', {
   h2: {
     fontSize: '2rem',
     textAlign: 'center',
+    fontWeight: '2rem',
   },
 
   '@mobile': {

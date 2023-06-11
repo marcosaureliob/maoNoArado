@@ -40,6 +40,7 @@ export const globalStyles = globalCss({
     fontFamily: 'Roboto',
     fontWeight: 400,
     margin: 0,
+    letterSpacing: '0.04em',
   },
 
   a: {

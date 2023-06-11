@@ -94,6 +94,10 @@ export const ListOptionsFooter = styled('li', {
     color: '#Fff',
     display: 'block',
     fontSize: '1.125rem',
+
+    '&:hover': {
+      fontWeight: 700,
+    },
   },
 })
 

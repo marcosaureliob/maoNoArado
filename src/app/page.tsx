@@ -12,7 +12,6 @@ import {
   ImagePartner,
   DonateSectionContainer,
   DonateBox,
-  ButtonDonate,
   MaxWidthBox,
   BannerInfo,
   BoxInfo,
@@ -43,7 +42,6 @@ import {
   GlobeSimple,
   Handshake,
   UsersFour,
-  HandHeart,
 } from '@phosphor-icons/react'
 import { ButtonSupport } from '@/components/ButtonSupport'
 
@@ -176,10 +174,9 @@ export default function Home() {
             </h3>
 
             <p>
-              Qualificação profissional potencializa as oportunidades
-              profissionais. Além de impactar com a redução de diversos
-              problemas como a inserção ao uso e tráfico de entorpecentes,
-              prostituição, exploração infantil, entre outras.
+              Além de impactar com a redução de diversos problemas como a
+              inserção ao uso e tráfico de entorpecentes, prostituição,
+              exploração infantil, entre outras.
             </p>
           </BoxInfoTwins>
         </BoxContentTwins>
@@ -240,33 +237,30 @@ export default function Home() {
         <DonateBoxContainer>
           <DonateBox>
             <HashStraight size={40} />
-            <h2>Fundo social</h2>
+            <h3>Fundo social</h3>
             <div></div>
           </DonateBox>
 
           <DonateBox>
             <GlobeSimple size={40} />
-            <h2>Cidade Solidária</h2>
+            <h3>Cidade Solidária</h3>
             <div></div>
           </DonateBox>
 
           <DonateBox>
             <Handshake size={40} />
-            <h2>Parceiros</h2>
+            <h3>Parceiros</h3>
             <div></div>
           </DonateBox>
 
           <DonateBox>
             <UsersFour size={40} />
-            <h2>Amigos</h2>
+            <h3>Amigos</h3>
             <div></div>
           </DonateBox>
         </DonateBoxContainer>
 
         <ButtonSupport text={'Como Apoiar'} />
-        {/* <ButtonDonate href="contact">
-          COMO AJUDAR <HandHeart size={40} />
-        </ButtonDonate> */}
       </DonateSectionContainer>
 
       <PartnerList>

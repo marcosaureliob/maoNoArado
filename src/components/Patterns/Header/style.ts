@@ -149,14 +149,12 @@ export const NavLinkLogo = styled(Link, {
 
 export const NavLink = styled(Link, {
   fontSize: '1.25rem',
-  fontWeight: '500',
-  letterSpacing: '4%',
-  color: '#333333',
+  fontWeight: 600,
+  color: '$gray900',
 
   '@mobile': {
     width: '100%',
     textAlign: 'center',
-    fontWeight: 600,
     paddingBottom: '0.5rem',
     borderBottom: '3px solid transparent',
     transition: 'border-bottom 300ms, color 200ms',

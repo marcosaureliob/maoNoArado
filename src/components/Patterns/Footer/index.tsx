@@ -69,13 +69,13 @@ export const Footer = () => {
               <Link href="/">Mão no Arado</Link>
             </ListOptionsFooter>
             <ListOptionsFooter>
-              <Link href="/">Projetos</Link>
+              <Link href="/project">Projetos</Link>
             </ListOptionsFooter>
             <ListOptionsFooter>
-              <Link href="/">Galeria</Link>
+              <Link href="/gallery">Galeria</Link>
             </ListOptionsFooter>
             <ListOptionsFooter>
-              <Link href="/">Contato</Link>
+              <Link href="/contact">Contato</Link>
             </ListOptionsFooter>
             <SectionActionWrapper>
               <ButtonSupport text={'Apoiar'} />
