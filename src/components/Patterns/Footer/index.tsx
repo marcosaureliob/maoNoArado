@@ -78,7 +78,7 @@ export const Footer = () => {
               <Link href="/">Contato</Link>
             </ListOptionsFooter>
             <SectionActionWrapper>
-              <ButtonSupport />
+              <ButtonSupport text={'Apoiar'} />
             </SectionActionWrapper>
           </ListOptionsFooterContainer>
         </FooterInforsContainer>

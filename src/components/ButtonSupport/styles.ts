@@ -16,7 +16,9 @@ export const ButtonSupportWrapper = styled(Link, {
     backgroundColor: '$orange700',
   },
 })
+
 export const TextButton = styled('span', {
-  fontSize: '1rem',
-  fontWeight: '600',
+  textTransform: 'uppercase',
+  fontSize: '1.25rem',
+  fontWeight: '700',
 })

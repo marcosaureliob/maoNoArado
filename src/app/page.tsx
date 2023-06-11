@@ -45,6 +45,7 @@ import {
   UsersFour,
   HandHeart,
 } from '@phosphor-icons/react'
+import { ButtonSupport } from '@/components/ButtonSupport'
 
 export default function Home() {
   return (
@@ -262,9 +263,10 @@ export default function Home() {
           </DonateBox>
         </DonateBoxContainer>
 
-        <ButtonDonate href="contact">
+        <ButtonSupport text={'Como Apoiar'} />
+        {/* <ButtonDonate href="contact">
           COMO AJUDAR <HandHeart size={40} />
-        </ButtonDonate>
+        </ButtonDonate> */}
       </DonateSectionContainer>
 
       <PartnerList>

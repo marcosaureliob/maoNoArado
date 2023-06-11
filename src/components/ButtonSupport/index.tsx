@@ -1,12 +1,16 @@
 import React from 'react'
-import HandHeard from '@/assets/hand-heart.svg'
 import { ButtonSupportWrapper, TextButton } from './styles'
-import Image from 'next/image'
-export const ButtonSupport = () => {
+import { HandHeart } from '@phosphor-icons/react'
+
+interface ButtonSupportProps {
+  text: string
+}
+
+export const ButtonSupport = ({ text }: ButtonSupportProps) => {
   return (
-    <ButtonSupportWrapper href="contact">
-      <TextButton>APOIAR</TextButton>
-      <Image src={HandHeard} alt="Imagem de uma mão segurando um coração" />
+    <ButtonSupportWrapper href="/contact">
+      <TextButton>{text}</TextButton>
+      <HandHeart size={40} />
     </ButtonSupportWrapper>
   )
 }

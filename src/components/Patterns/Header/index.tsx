@@ -105,7 +105,7 @@ export const Header = () => {
           </ButtonSupportMobile>
         </NavHeaderWrapper>
         <Support onClick={handleItemClick}>
-          <ButtonSupport />
+          <ButtonSupport text={'Apoiar'} />
         </Support>
       </HeaderWrapper>
     </HeaderContainer>
