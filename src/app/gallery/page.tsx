@@ -1,23 +1,35 @@
 'use client'
 
-import { GalleryContainer } from '@/styles/page/gallery'
-import ImageGallery from './components/ImageGallery/page'
-import { createContext, useState } from 'react'
+import Image from 'next/image'
 
-interface ImageQuantityContextType {
-  getImageQuantity: (value: number) => void
+import 'lightgallery/css/lightgallery.css'
+import 'lightgallery/css/lg-zoom.css'
+import 'lightgallery/css/lg-thumbnail.css'
+
+import LightGallery from 'lightgallery/react'
+import lgVideo from 'lightgallery/plugins/video'
+
+import { GalleryContainer, ImageContainer } from '@/styles/page/gallery'
+import { useEffect, useState } from 'react'
+
+import { imageDatabase } from '@/database/index'
+
+const invertImageDatabase = imageDatabase.slice(0).reverse()
+const containImage = invertImageDatabase.length !== 0
+
+interface ImageProps {
+  title: string
+  src: string
 }
-
-export const ImageQuantityContext = createContext(
-  {} as ImageQuantityContextType,
-)
 
 export default function Gallery() {
   const [imageQuantity, setImageQuantity] = useState(0)
 
-  function getImageQuantity(value: number) {
-    setImageQuantity(value)
-  }
+  useEffect(() => {
+    setImageQuantity(invertImageDatabase.length)
+  }, [setImageQuantity])
+
+  console.log(imageQuantity)
 
   return (
     <GalleryContainer>
@@ -25,9 +37,32 @@ export default function Gallery() {
 
       {imageQuantity !== 0 && <span>{imageQuantity} imagens</span>}
 
-      <ImageQuantityContext.Provider value={{ getImageQuantity }}>
-        <ImageGallery />
-      </ImageQuantityContext.Provider>
+      {containImage ? (
+        <LightGallery
+          elementClassNames={ImageContainer()}
+          plugins={[lgVideo]}
+          mode="lg-fade"
+        >
+          {invertImageDatabase.map((image: ImageProps) => {
+            return (
+              <a
+                key={image.title}
+                className="gallery-item"
+                data-src={image.src}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.title}
+                  style={{ objectFit: 'cover' }}
+                  fill
+                />
+              </a>
+            )
+          })}
+        </LightGallery>
+      ) : (
+        <h3>Em breve teremos novas fotos da nossa comunidade</h3>
+      )}
     </GalleryContainer>
   )
 }
