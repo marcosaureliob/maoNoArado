@@ -1,9 +1,8 @@
-'use client'
 import { ReactNode } from 'react'
-import { globalStyles } from '@/styles/global'
 import { Roboto } from 'next/font/google'
 import { Footer } from '@/components/Patterns/Footer'
 import { Header } from '@/components/Patterns/Header'
+import PreLoading from './preLoading'
 
 const roboto = Roboto({
   weight: '400',
@@ -11,19 +10,20 @@ const roboto = Roboto({
   preload: false,
 })
 
-// export const metadata = {
-//   title: 'Mão no Arado',
-//   description: 'Site da Ong Mão no Arado',
-// }
+export const metadata = {
+  title: 'Mão no Arado',
+  description: 'Site da Ong Mão no Arado',
+}
 
-globalStyles()
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body className={roboto.className}>
-        <Header />
-        {children}
-        <Footer />
+        <PreLoading>
+          <Header />
+          {children}
+          <Footer />
+        </PreLoading>
       </body>
     </html>
   )
