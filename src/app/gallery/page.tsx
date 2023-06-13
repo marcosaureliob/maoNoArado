@@ -29,8 +29,6 @@ export default function Gallery() {
     setImageQuantity(invertImageDatabase.length)
   }, [setImageQuantity])
 
-  console.log(imageQuantity)
-
   return (
     <GalleryContainer>
       <h2>Fotos da nossa comunidade</h2>
