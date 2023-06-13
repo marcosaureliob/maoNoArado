@@ -11,10 +11,10 @@ const roboto = Roboto({
   preload: false,
 })
 
-// export const metadata = {
-//   title: 'Mão no Arado',
-//   description: 'Site da Ong Mão no Arado',
-// }
+export const metadata = {
+  title: 'Mão no Arado',
+  description: 'Site da Ong Mão no Arado',
+}
 
 globalStyles()
 export default function RootLayout({ children }: { children: ReactNode }) {
