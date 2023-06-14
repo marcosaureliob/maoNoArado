@@ -1,0 +1,22 @@
+.preLoadingPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(180deg, rgba(0, 163, 196, 0.1) 0%, rgba(250, 250, 250, 0.1) 26.56%, rgba(250, 250, 250, 0.1) 70.83%, rgba(255, 152, 92, 0.1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logoBox {
+    position: relative;
+
+    width: 103px;
+    height: 104px;
+}
+  
