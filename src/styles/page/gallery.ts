@@ -12,7 +12,6 @@ export const GalleryContainer = styled('section', {
   gap: 32,
 
   h2: {
-    letterSpacing: '0.04em',
     fontSize: '2rem',
   },
 

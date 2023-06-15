@@ -14,7 +14,7 @@ export const ContainerBanner = styled('section', {
   position: 'relative',
 
   width: '100%',
-  padding: '13rem 0 6.25rem',
+  padding: '15.125rem 0 6.25rem',
 
   display: 'flex',
   alignItems: 'center',
@@ -137,13 +137,11 @@ export const FirstContainer = styled('section', {
       fontSize: '2rem',
       lineHeight: '130%',
       fontWeight: 700,
-      letter: '4%',
     },
 
     p: {
       fontSize: '1.125rem',
       lineHeight: '160%',
-      letter: '4%',
       marginTop: '1.875rem',
     },
   },
