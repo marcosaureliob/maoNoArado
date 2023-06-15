@@ -13,7 +13,7 @@ export const HistoryContainer = styled('div', {
 export const HistoryContent = styled('section', {
   position: 'relative',
 
-  padding: '13rem 0 6.25rem',
+  padding: '15.125rem 0 6.25rem',
   width: '100%',
 
   display: 'flex',
@@ -29,15 +29,13 @@ export const HistoryContent = styled('section', {
     fontWeight: 'bold',
     fontSize: '3rem',
     marginBottom: '2rem',
-    color: '$gray900',
   },
 
   p: {
     fontWeight: '400',
     fontSize: '1.25rem',
     lineHeight: '160%',
-    letterSpacing: '0.04em',
-    color: '$gray-800',
+    color: '$gray800',
   },
 
   '@mobile': {
@@ -57,6 +55,8 @@ export const CardsContainer = styled('section', {
 
   marginTop: '10rem',
   position: 'relative',
+  width: '100%',
+  maxWidth: '76rem',
 
   '@mobile': {
     padding: '0 1rem',
@@ -95,8 +95,6 @@ export const Card = styled('div', {
   p: {
     fontWeight: '400',
     fontSize: '1.125rem',
-    letterSpacing: ' 0.06em',
-    color: '$gray-900',
     lineHeight: '160%',
   },
 
@@ -107,7 +105,7 @@ export const Card = styled('div', {
 
 export const CardPresident = styled('section', {
   width: '100%',
-  maxWidth: '50rem',
+  maxWidth: '54rem',
   marginTop: '10rem',
 
   display: 'flex',
@@ -118,7 +116,6 @@ export const CardPresident = styled('section', {
   h2: {
     fontWeight: '700',
     fontSize: '2rem',
-    letterSpacing: '0.04em',
     color: '$gray-900',
   },
 
@@ -152,16 +149,13 @@ export const Wrapper = styled('div', {
   h3: {
     fontWeight: '700',
     fontSize: '2.25rem',
-    color: '$gray900',
-    letterSpacing: '0.04em',
     marginBottom: '2rem',
   },
 
   p: {
     fontWeight: '400',
-    fontSize: '1.25rem',
+    fontSize: '1.125rem',
     lineHeight: '160%',
-    letterSpacing: '0.06em',
 
     '&:nth-child(2)': {
       marginBottom: '2rem',
@@ -185,11 +179,4 @@ export const Wrapper = styled('div', {
       fontSize: '1.125rem',
     },
   },
-
-  // '@tablet': {
-  //   img: {
-  //     width: '6rem',
-  //     objectFit: 'cover',
-  //   },
-  // },
 })
