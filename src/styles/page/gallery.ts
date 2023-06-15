@@ -61,11 +61,21 @@ export const ImageContainer = css({
       filter: 'brightness(60%)',
     },
 
+    '@mobile': {
+      borderRadius: '8px',
+      width: '80px',
+      height: '80px',
+    },
+
     '@mobileS': {
       borderRadius: '8px',
       width: '80px',
       height: '80px',
     },
+  },
+
+  '@mobile': {
+    gap: '3px 3px',
   },
 
   '@mobileS': {
