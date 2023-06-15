@@ -20,7 +20,7 @@ export const ProjectBanner = styled('section', {
   position: 'relative',
 
   width: '100%',
-  padding: '13rem 0 6.25rem',
+  padding: '15.125rem 0 6.25rem',
 
   display: 'flex',
   justifyContent: 'center',
@@ -78,7 +78,6 @@ export const ProjectBox = styled('section', {
 
   h2: {
     fontSize: '2rem',
-    letterSpacing: '0.04em',
   },
 
   div: {
@@ -122,7 +121,6 @@ export const Tag = styled('span', {
   fontWeight: '700',
   padding: '1rem 2rem',
   textTransform: 'uppercase',
-  letterSpacing: '0.06em',
 
   '@mobile': {
     fontSize: '0.625rem',
@@ -140,6 +138,5 @@ export const BenefitBox = styled('section', {
 
   h2: {
     fontSize: '2rem',
-    letterSpacing: '0.04em',
   },
 })
