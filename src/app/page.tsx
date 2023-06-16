@@ -7,7 +7,7 @@ import {
   FirstContainer,
   ImageBolt,
   SecondContainer,
-  ImageKids,
+  ImageAction,
   PartnerList,
   ImagePartner,
   DonateSectionContainer,
@@ -31,7 +31,7 @@ import { imagePartners } from '../database/index'
 
 import Banner from '../assets/img-banner.svg'
 import Lightning from '../assets/lightning.svg'
-import Kids from '../assets/kids.svg'
+import Action from '../assets/action.svg'
 import Employers from '../assets/employers.svg'
 import People from '../assets/peoples.svg'
 import Hands from '../assets/hands.svg'
@@ -74,7 +74,6 @@ export default function Home() {
               src={Banner}
               alt="Na primeira imagem uma garota branca e loira de cabelos curtos, regando plantas com um regador azul. Na segunda imagem, uma criança esta com um brinquedo de fotografia, brincando de fotografar"
               fill
-              // style={{ objectFit: 'contain' }}
             />
           </ImageBox>
         </MaxWidthBox>
@@ -104,9 +103,9 @@ export default function Home() {
       </FirstContainer>
 
       <SecondContainer>
-        <ImageKids>
-          <Image src={Kids} alt="Kids" fill style={{ objectFit: 'cover' }} />
-        </ImageKids>
+        <ImageAction>
+          <Image src={Action} alt="Kids" fill style={{ objectFit: 'cover' }} />
+        </ImageAction>
 
         <BoxInfo>
           <h2>Mão no Arado possui funções importantes na sociedade</h2>
@@ -135,14 +134,14 @@ export default function Home() {
             trabalho.
           </p>
         </BoxInfo>
-        <ImageKids heightEmployers>
+        <ImageAction heightEmployers>
           <Image
             src={Employers}
             alt="Kids"
             fill
             style={{ objectFit: 'cover' }}
           />
-        </ImageKids>
+        </ImageAction>
       </SecondContainer>
 
       <BackgroundSection marginTop>

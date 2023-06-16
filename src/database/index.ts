@@ -13,56 +13,96 @@ import Sebrae from '../assets/partners/sebrae.svg'
 
 export const imageDatabase = [
   {
-    title: 'Imagem de floresta 1',
+    title: 'ONG Mão no Arado = Imagem 1',
     src: '/image1.jpg',
   },
   {
-    title: 'Imagem de floresta 2',
-    src: '/image10.jpg',
-  },
-  {
-    title: 'Imagem de floresta 3',
+    title: 'ONG Mão no Arado = Imagem 2',
     src: '/image2.jpg',
   },
   {
-    title: 'Imagem de floresta 4',
+    title: 'ONG Mão no Arado = Imagem 3',
     src: '/image3.jpg',
   },
   {
-    title: 'Imagem de floresta 5',
+    title: 'ONG Mão no Arado = Imagem 4',
     src: '/image4.jpg',
   },
   {
-    title: 'Imagem de floresta 6',
+    title: 'ONG Mão no Arado = Imagem 5',
     src: '/image5.jpg',
   },
   {
-    title: 'Imagem de floresta 7',
+    title: 'ONG Mão no Arado = Imagem 6',
     src: '/image6.jpg',
   },
   {
-    title: 'Imagem de floresta 8',
+    title: 'ONG Mão no Arado = Imagem 7',
     src: '/image7.jpg',
   },
   {
-    title: 'Imagem de floresta 9',
+    title: 'ONG Mão no Arado = Imagem 8',
     src: '/image8.jpg',
   },
   {
-    title: 'Imagem de floresta 10',
+    title: 'ONG Mão no Arado = Imagem 9',
     src: '/image9.jpg',
   },
   {
-    title: 'Imagem de floresta 11',
-    src: '/image4.jpg',
+    title: 'ONG Mão no Arado = Imagem 10',
+    src: '/image10.jpg',
   },
   {
-    title: 'Imagem de floresta 12',
-    src: '/image5.jpg',
+    title: 'ONG Mão no Arado = Imagem 11',
+    src: '/image11.jpg',
   },
   {
-    title: 'Imagem de floresta 13',
-    src: '/image8.jpg',
+    title: 'ONG Mão no Arado = Imagem 12',
+    src: '/image12.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 13',
+    src: '/image13.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 14',
+    src: '/image14.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 15',
+    src: '/image15.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 16',
+    src: '/image16.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 17',
+    src: '/image17.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 18',
+    src: '/image18.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 19',
+    src: '/image19.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 20',
+    src: '/image20.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 21',
+    src: '/image21.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 22',
+    src: '/image22.jpg',
+  },
+  {
+    title: 'ONG Mão no Arado = Imagem 23',
+    src: '/image23.jpg',
   },
 ]
 

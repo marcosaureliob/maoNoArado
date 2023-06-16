@@ -204,7 +204,7 @@ export const SecondContainer = styled('section', {
   },
 })
 
-export const ImageKids = styled('section', {
+export const ImageAction = styled('section', {
   position: 'relative',
 
   width: '36.875rem',
