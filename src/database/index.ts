@@ -7,7 +7,7 @@ import Mao from '../assets/partners/maosementes.svg'
 import Mercado from '../assets/partners/mercadolivre.svg'
 import Mulheres from '../assets/partners/mulheres-brasil.svg'
 import Oliveira from '../assets/partners/oliveira.svg'
-import Sabesp from '../assets/partners/sabesp.svg'
+import AkiPossoMais from '../assets/partners/aki-posso-mais.svg'
 import Sales from '../assets/partners/salles.svg'
 import Sebrae from '../assets/partners/sebrae.svg'
 
@@ -145,7 +145,7 @@ export const imagePartners = [
   },
   {
     title: 'Mulheres do Brasil',
-    src: Sabesp,
+    src: AkiPossoMais,
   },
   {
     title: 'Sabesp',

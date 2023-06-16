@@ -42,6 +42,7 @@ export const MaxWidthBox = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  gap: '2rem 0',
 
   variants: {
     wrap: {
@@ -49,6 +50,7 @@ export const MaxWidthBox = styled('div', {
         flexWrap: 'wrap',
       },
     },
+
     responsiveBanner: {
       true: {
         '@mobile': {
